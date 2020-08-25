@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Documentation Generation MZ
+name: Documentation Generation MV
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -52,7 +52,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Create Documentation
-      run: npm run createdocsmz
+      run: npm run createdocsmv
       
     - name: Push Doc Changes To Branch
       run: |
