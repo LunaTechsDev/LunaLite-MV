@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>InteractionManager | Lunalite-MZ</title>
-	<meta name="description" content="Documentation for Lunalite-MZ">
+	<title>InteractionManager | LunaLite-MV</title>
+	<meta name="description" content="Documentation for LunaLite-MV">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">Lunalite-MZ</a>
+					<a href="../index.html" class="title">LunaLite-MV</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -72,21 +72,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The interaction manager deals with mouse, touch and pointer events.</p>
-					</div>
-					<p>Any DisplayObject can be interactive if its <code>interactive</code> property is set to true.</p>
-					<p>This manager also supports multitouch.</p>
-					<p>An instance of this class is automatically created by default, and can be found at <code>renderer.plugins.interaction</code></p>
-					<dl class="tsd-comment-tags">
-						<dt>memberof</dt>
-						<dd><p>PIXI.interaction</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -107,50 +92,74 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.interaction.interactionmanager.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#_temppoint" class="tsd-kind-icon">_temp<wbr>Point</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#activeinteractiondata" class="tsd-kind-icon">active<wbr>Interaction<wbr>Data</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#autopreventdefault" class="tsd-kind-icon">auto<wbr>Prevent<wbr>Default</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#currentcursormode" class="tsd-kind-icon">current<wbr>Cursor<wbr>Mode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#currentcursorstyle" class="tsd-kind-icon">current<wbr>Cursor<wbr>Style</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#cursor" class="tsd-kind-icon">cursor</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#cursorstyles" class="tsd-kind-icon">cursor<wbr>Styles</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#defaultcursorstyle" class="tsd-kind-icon">default<wbr>Cursor<wbr>Style</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#eventdata" class="tsd-kind-icon">event<wbr>Data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#eventsadded" class="tsd-kind-icon">events<wbr>Added</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#eventsadded" class="tsd-kind-icon">events<wbr>Added</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#interactiondomelement" class="tsd-kind-icon">interactionDOMElement</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#interactiondatapool" class="tsd-kind-icon">interaction<wbr>Data<wbr>Pool</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#interactionfrequency" class="tsd-kind-icon">interaction<wbr>Frequency</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#mouse" class="tsd-kind-icon">mouse</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#mouseoverrenderer" class="tsd-kind-icon">mouse<wbr>Over<wbr>Renderer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#movewheninside" class="tsd-kind-icon">move<wbr>When<wbr>Inside</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#onpointercancel" class="tsd-kind-icon">on<wbr>Pointer<wbr>Cancel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#onpointerdown" class="tsd-kind-icon">on<wbr>Pointer<wbr>Down</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#onpointermove" class="tsd-kind-icon">on<wbr>Pointer<wbr>Move</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#onpointerout" class="tsd-kind-icon">on<wbr>Pointer<wbr>Out</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#onpointerover" class="tsd-kind-icon">on<wbr>Pointer<wbr>Over</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#onpointerup" class="tsd-kind-icon">on<wbr>Pointer<wbr>Up</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#processpointercancel" class="tsd-kind-icon">process<wbr>Pointer<wbr>Cancel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#processpointerdown" class="tsd-kind-icon">process<wbr>Pointer<wbr>Down</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#processpointermove" class="tsd-kind-icon">process<wbr>Pointer<wbr>Move</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#processpointeroverout" class="tsd-kind-icon">process<wbr>Pointer<wbr>Over<wbr>Out</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#processpointerup" class="tsd-kind-icon">process<wbr>Pointer<wbr>Up</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#renderer" class="tsd-kind-icon">renderer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#resolution" class="tsd-kind-icon">resolution</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#supportspointerevents" class="tsd-kind-icon">supports<wbr>Pointer<wbr>Events</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#supportstouchevents" class="tsd-kind-icon">supports<wbr>Touch<wbr>Events</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#tickeradded" class="tsd-kind-icon">ticker<wbr>Added</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#usesystemticker" class="tsd-kind-icon">use<wbr>System<wbr>Ticker</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.interaction.interactionmanager.html#eventemitter" class="tsd-kind-icon">Event<wbr>Emitter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.interaction.interactionmanager.html#prefixed-1" class="tsd-kind-icon">prefixed</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#addevents" class="tsd-kind-icon">add<wbr>Events</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.interaction.interactionmanager.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#configureinteractioneventfordomevent" class="tsd-kind-icon">configure<wbr>Interaction<wbr>Event<wbr>ForDOMEvent</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#destroy" class="tsd-kind-icon">destroy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.interaction.interactionmanager.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.interaction.interactionmanager.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#getinteractiondataforpointerid" class="tsd-kind-icon">get<wbr>Interaction<wbr>Data<wbr>For<wbr>Pointer<wbr>Id</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#hittest" class="tsd-kind-icon">hit<wbr>Test</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.interaction.interactionmanager.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.interaction.interactionmanager.html#listeners" class="tsd-kind-icon">listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#mappositiontopoint" class="tsd-kind-icon">map<wbr>Position<wbr>ToPoint</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#normalizetopointerdata" class="tsd-kind-icon">normalize<wbr>ToPointer<wbr>Data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.interaction.interactionmanager.html#off" class="tsd-kind-icon">off</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.interaction.interactionmanager.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#onpointercomplete" class="tsd-kind-icon">on<wbr>Pointer<wbr>Complete</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.interaction.interactionmanager.html#once" class="tsd-kind-icon">once</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#processinteractive" class="tsd-kind-icon">process<wbr>Interactive</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#releaseinteractiondataforpointerid" class="tsd-kind-icon">release<wbr>Interaction<wbr>Data<wbr>For<wbr>Pointer<wbr>Id</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.interaction.interactionmanager.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#removeevents" class="tsd-kind-icon">remove<wbr>Events</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.interaction.interactionmanager.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#setcursormode" class="tsd-kind-icon">set<wbr>Cursor<wbr>Mode</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#settargetelement" class="tsd-kind-icon">set<wbr>Target<wbr>Element</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#tickerupdate" class="tsd-kind-icon">ticker<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.interaction.interactionmanager.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.interaction.interactionmanager.html#settargetelement" class="tsd-kind-icon">set<wbr>Target<wbr>Element</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.interaction.interactionmanager.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
@@ -159,37 +168,27 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Interaction<wbr>Manager<span class="tsd-signature-symbol">(</span>renderer<span class="tsd-signature-symbol">: </span><a href="pixi.renderer.html" class="tsd-signature-type">Renderer</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>autoPreventDefault<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>interactionFrequency<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>useSystemTicker<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.interaction.interactionmanager.html" class="tsd-signature-type">InteractionManager</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Interaction<wbr>Manager<span class="tsd-signature-symbol">(</span>renderer<span class="tsd-signature-symbol">: </span><a href="pixi.canvasrenderer.html" class="tsd-signature-type">CanvasRenderer</a><span class="tsd-signature-symbol"> | </span><a href="pixi.webglrenderer.html" class="tsd-signature-type">WebGLRenderer</a><span class="tsd-signature-symbol"> | </span><a href="pixi.systemrenderer.html" class="tsd-signature-type">SystemRenderer</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/pixi.interaction.interactionmanageroptions.html" class="tsd-signature-type">InteractionManagerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.interaction.interactionmanager.html" class="tsd-signature-type">InteractionManager</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="pixi.container.html">Container</a>.<a href="pixi.container.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:11407</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2008">definitions/lunalite-pixi-mv.d.ts:2008</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>renderer: <a href="pixi.renderer.html" class="tsd-signature-type">Renderer</a></h5>
+									<h5>renderer: <a href="pixi.canvasrenderer.html" class="tsd-signature-type">CanvasRenderer</a><span class="tsd-signature-symbol"> | </span><a href="pixi.webglrenderer.html" class="tsd-signature-type">WebGLRenderer</a><span class="tsd-signature-symbol"> | </span><a href="pixi.systemrenderer.html" class="tsd-signature-type">SystemRenderer</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-symbol">{ </span>autoPreventDefault<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>interactionFrequency<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>useSystemTicker<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> auto<wbr>Prevent<wbr>Default<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> interaction<wbr>Frequency<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> use<wbr>System<wbr>Ticker<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-									</ul>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/pixi.interaction.interactionmanageroptions.html" class="tsd-signature-type">InteractionManagerOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="pixi.interaction.interactionmanager.html" class="tsd-signature-type">InteractionManager</a></h4>
@@ -199,31 +198,43 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_temppoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _temp<wbr>Point</h3>
+					<div class="tsd-signature tsd-kind-icon">_temp<wbr>Point<span class="tsd-signature-symbol">:</span> <a href="pixi.point.html" class="tsd-signature-type">Point</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2041">definitions/lunalite-pixi-mv.d.ts:2041</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="activeinteractiondata" class="tsd-anchor"></a>
+					<h3>active<wbr>Interaction<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">active<wbr>Interaction<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2015">definitions/lunalite-pixi-mv.d.ts:2015</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]: </span><a href="pixi.interaction.interactiondata.html" class="tsd-signature-type">InteractionData</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="autopreventdefault" class="tsd-anchor"></a>
 					<h3>auto<wbr>Prevent<wbr>Default</h3>
 					<div class="tsd-signature tsd-kind-icon">auto<wbr>Prevent<wbr>Default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11428</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2012">definitions/lunalite-pixi-mv.d.ts:2012</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Should default browser actions automatically be prevented.
-								Does not apply to pointer events for backwards compatibility
-								preventDefault on pointer events stops mouse events from firing
-							Thus, for every pointer event, there will always be either a mouse of touch event alongside it.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{boolean} PIXI.interaction.InteractionManager#autoPreventDefault</p>
-							</dd>
-							<dt>default</dt>
-							<dd><p>true</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="currentcursormode" class="tsd-anchor"></a>
@@ -231,91 +242,80 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Cursor<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11520</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2039">definitions/lunalite-pixi-mv.d.ts:2039</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The mode of the cursor that is being used.
-							The value of this is a key from the cursorStyles dictionary.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} PIXI.interaction.InteractionManager#currentCursorMode</p>
-							</dd>
-						</dl>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="currentcursorstyle" class="tsd-anchor"></a>
+					<h3>current<wbr>Cursor<wbr>Style</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Cursor<wbr>Style<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2073">definitions/lunalite-pixi-mv.d.ts:2073</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="cursor" class="tsd-anchor"></a>
+					<h3>cursor</h3>
+					<div class="tsd-signature tsd-kind-icon">cursor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2040">definitions/lunalite-pixi-mv.d.ts:2040</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="cursorstyles" class="tsd-anchor"></a>
 					<h3>cursor<wbr>Styles</h3>
-					<div class="tsd-signature tsd-kind-icon">cursor<wbr>Styles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<div class="tsd-signature tsd-kind-icon">cursor<wbr>Styles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>default<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11511</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2035">definitions/lunalite-pixi-mv.d.ts:2035</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Dictionary of how different cursor modes are handled. Strings are handled as CSS cursor
-								values, objects are handled as dictionaries of CSS values for interactionDOMElement,
-								and functions are called instead of changing the CSS.
-							Default CSS cursor values are provided for &#39;default&#39; and &#39;pointer&#39; modes.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{Object.&lt;string, Object&gt;} PIXI.interaction.InteractionManager#cursorStyles</p>
-							</dd>
-						</dl>
-					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
+							<li class="tsd-parameter">
+								<h5>default<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="eventdata" class="tsd-anchor"></a>
-					<h3>event<wbr>Data</h3>
-					<div class="tsd-signature tsd-kind-icon">event<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="defaultcursorstyle" class="tsd-anchor"></a>
+					<h3>default<wbr>Cursor<wbr>Style</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Cursor<wbr>Style<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11447</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2072">definitions/lunalite-pixi-mv.d.ts:2072</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>An event data object to handle all the event tracking/dispatching</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{object} PIXI.interaction.InteractionManager#eventData</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="eventdata" class="tsd-anchor"></a>
+					<h3>event<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">event<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2017">definitions/lunalite-pixi-mv.d.ts:2017</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="eventsadded" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> events<wbr>Added</h3>
+					<h3>events<wbr>Added</h3>
 					<div class="tsd-signature tsd-kind-icon">events<wbr>Added<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11473</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2020">definitions/lunalite-pixi-mv.d.ts:2020</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Have events been attached to the dom element?</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{boolean} PIXI.interaction.InteractionManager#eventsAdded</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="interactiondomelement" class="tsd-anchor"></a>
@@ -323,19 +323,19 @@
 					<div class="tsd-signature tsd-kind-icon">interactionDOMElement<span class="tsd-signature-symbol">:</span> <a href="../interfaces/htmlanchorelement.html#htmlelement" class="tsd-signature-type">HTMLElement</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11454</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2018">definitions/lunalite-pixi-mv.d.ts:2018</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The DOM element to bind to.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{HTMLElement} PIXI.interaction.InteractionManager#interactionDOMElement</p>
-							</dd>
-						</dl>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="interactiondatapool" class="tsd-anchor"></a>
+					<h3>interaction<wbr>Data<wbr>Pool</h3>
+					<div class="tsd-signature tsd-kind-icon">interaction<wbr>Data<wbr>Pool<span class="tsd-signature-symbol">:</span> <a href="pixi.interaction.interactiondata.html" class="tsd-signature-type">InteractionData</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2016">definitions/lunalite-pixi-mv.d.ts:2016</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="interactionfrequency" class="tsd-anchor"></a>
@@ -343,22 +343,9 @@
 					<div class="tsd-signature tsd-kind-icon">interaction<wbr>Frequency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11435</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2013">definitions/lunalite-pixi-mv.d.ts:2013</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Maximum requency in milliseconds at which pointer over/out states will be checked by <a href="pixi.interaction.interactionmanager.html#tickerupdate">tickerUpdate</a>.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{number} PIXI.interaction.InteractionManager#interactionFrequency</p>
-							</dd>
-							<dt>default</dt>
-							<dd><p>10</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="mouse" class="tsd-anchor"></a>
@@ -366,19 +353,9 @@
 					<div class="tsd-signature tsd-kind-icon">mouse<span class="tsd-signature-symbol">:</span> <a href="pixi.interaction.interactiondata.html" class="tsd-signature-type">InteractionData</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11441</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2014">definitions/lunalite-pixi-mv.d.ts:2014</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The mouse data</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{PIXI.interaction.InteractionData} PIXI.interaction.InteractionManager#mouse</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="mouseoverrenderer" class="tsd-anchor"></a>
@@ -386,19 +363,9 @@
 					<div class="tsd-signature tsd-kind-icon">mouse<wbr>Over<wbr>Renderer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11487</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2021">definitions/lunalite-pixi-mv.d.ts:2021</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Is the mouse hovering over the renderer?</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{boolean} PIXI.interaction.InteractionManager#mouseOverRenderer</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="movewheninside" class="tsd-anchor"></a>
@@ -406,47 +373,387 @@
 					<div class="tsd-signature tsd-kind-icon">move<wbr>When<wbr>Inside<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11466</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2019">definitions/lunalite-pixi-mv.d.ts:2019</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>This property determines if mousemove and touchmove events are fired only when the cursor
-								is over the object.
-								Setting to true will make things work more in line with how the DOM version works.
-								Setting to false can make things easier for things like dragging
-								It is currently set to false as this is how PixiJS used to work. This will be set to true in
-							future versions of pixi.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{boolean} PIXI.interaction.InteractionManager#moveWhenInside</p>
-							</dd>
-							<dt>default</dt>
-							<dd><p>false</p>
-							</dd>
-						</dl>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="onpointercancel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Pointer<wbr>Cancel</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Pointer<wbr>Cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2026">definitions/lunalite-pixi-mv.d.ts:2026</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="onpointerdown" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Pointer<wbr>Down</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Pointer<wbr>Down<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2028">definitions/lunalite-pixi-mv.d.ts:2028</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="onpointermove" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Pointer<wbr>Move</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Pointer<wbr>Move<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2030">definitions/lunalite-pixi-mv.d.ts:2030</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="onpointerout" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Pointer<wbr>Out</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Pointer<wbr>Out<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2032">definitions/lunalite-pixi-mv.d.ts:2032</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="onpointerover" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Pointer<wbr>Over</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Pointer<wbr>Over<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2034">definitions/lunalite-pixi-mv.d.ts:2034</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="onpointerup" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Pointer<wbr>Up</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Pointer<wbr>Up<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2024">definitions/lunalite-pixi-mv.d.ts:2024</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="processpointercancel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> process<wbr>Pointer<wbr>Cancel</h3>
+					<div class="tsd-signature tsd-kind-icon">process<wbr>Pointer<wbr>Cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>interactionEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a>, displayObject<span class="tsd-signature-symbol">: </span><a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2027">definitions/lunalite-pixi-mv.d.ts:2027</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>interactionEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a>, displayObject<span class="tsd-signature-symbol">: </span><a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>interactionEvent: <a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a></h5>
+											</li>
+											<li>
+												<h5>displayObject: <a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="processpointerdown" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> process<wbr>Pointer<wbr>Down</h3>
+					<div class="tsd-signature tsd-kind-icon">process<wbr>Pointer<wbr>Down<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>interactionEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a>, displayObject<span class="tsd-signature-symbol">: </span><a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a>, hit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2029">definitions/lunalite-pixi-mv.d.ts:2029</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>interactionEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a>, displayObject<span class="tsd-signature-symbol">: </span><a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a>, hit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>interactionEvent: <a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a></h5>
+											</li>
+											<li>
+												<h5>displayObject: <a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a></h5>
+											</li>
+											<li>
+												<h5>hit: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="processpointermove" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> process<wbr>Pointer<wbr>Move</h3>
+					<div class="tsd-signature tsd-kind-icon">process<wbr>Pointer<wbr>Move<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>interactionEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a>, displayObject<span class="tsd-signature-symbol">: </span><a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a>, hit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2031">definitions/lunalite-pixi-mv.d.ts:2031</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>interactionEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a>, displayObject<span class="tsd-signature-symbol">: </span><a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a>, hit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>interactionEvent: <a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a></h5>
+											</li>
+											<li>
+												<h5>displayObject: <a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a></h5>
+											</li>
+											<li>
+												<h5>hit: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="processpointeroverout" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> process<wbr>Pointer<wbr>Over<wbr>Out</h3>
+					<div class="tsd-signature tsd-kind-icon">process<wbr>Pointer<wbr>Over<wbr>Out<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>interactionEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a>, displayObject<span class="tsd-signature-symbol">: </span><a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a>, hit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2033">definitions/lunalite-pixi-mv.d.ts:2033</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>interactionEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a>, displayObject<span class="tsd-signature-symbol">: </span><a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a>, hit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>interactionEvent: <a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a></h5>
+											</li>
+											<li>
+												<h5>displayObject: <a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a></h5>
+											</li>
+											<li>
+												<h5>hit: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="processpointerup" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> process<wbr>Pointer<wbr>Up</h3>
+					<div class="tsd-signature tsd-kind-icon">process<wbr>Pointer<wbr>Up<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>interactionEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a>, displayObject<span class="tsd-signature-symbol">: </span><a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a>, hit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2025">definitions/lunalite-pixi-mv.d.ts:2025</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>interactionEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a>, displayObject<span class="tsd-signature-symbol">: </span><a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a>, hit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>interactionEvent: <a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a></h5>
+											</li>
+											<li>
+												<h5>displayObject: <a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a></h5>
+											</li>
+											<li>
+												<h5>hit: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="renderer" class="tsd-anchor"></a>
 					<h3>renderer</h3>
-					<div class="tsd-signature tsd-kind-icon">renderer<span class="tsd-signature-symbol">:</span> <a href="pixi.abstractrenderer.html" class="tsd-signature-type">AbstractRenderer</a></div>
+					<div class="tsd-signature tsd-kind-icon">renderer<span class="tsd-signature-symbol">:</span> <a href="pixi.systemrenderer.html" class="tsd-signature-type">SystemRenderer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11418</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2011">definitions/lunalite-pixi-mv.d.ts:2011</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The renderer this interaction manager works for.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{PIXI.AbstractRenderer} PIXI.interaction.InteractionManager#renderer</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="resolution" class="tsd-anchor"></a>
@@ -454,22 +761,9 @@
 					<div class="tsd-signature tsd-kind-icon">resolution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11527</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2042">definitions/lunalite-pixi-mv.d.ts:2042</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The current resolution / device pixel ratio.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{number} PIXI.interaction.InteractionManager#resolution</p>
-							</dd>
-							<dt>default</dt>
-							<dd><p>1</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="supportspointerevents" class="tsd-anchor"></a>
@@ -477,22 +771,9 @@
 					<div class="tsd-signature tsd-kind-icon">supports<wbr>Pointer<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11503</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2023">definitions/lunalite-pixi-mv.d.ts:2023</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Does the device support pointer events
-							<a href="https://www.w3.org/Submission/pointer-events/">https://www.w3.org/Submission/pointer-events/</a></p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>readonly</dt>
-							<dd></dd>
-							<dt>member</dt>
-							<dd><p>{boolean} PIXI.interaction.InteractionManager#supportsPointerEvents</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="supportstouchevents" class="tsd-anchor"></a>
@@ -500,69 +781,76 @@
 					<div class="tsd-signature tsd-kind-icon">supports<wbr>Touch<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11495</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2022">definitions/lunalite-pixi-mv.d.ts:2022</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Does the device support touch events
-							<a href="https://www.w3.org/TR/touch-events/">https://www.w3.org/TR/touch-events/</a></p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>readonly</dt>
-							<dd></dd>
-							<dt>member</dt>
-							<dd><p>{boolean} PIXI.interaction.InteractionManager#supportsTouchEvents</p>
-							</dd>
-						</dl>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="eventemitter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Event<wbr>Emitter</h3>
+					<div class="tsd-signature tsd-kind-icon">Event<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>constructor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>prefixed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#eventemitter">EventEmitter</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2810">definitions/lunalite-pixi-mv.d.ts:2810</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>constructor<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">new __type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.utils.eventemitter.html" class="tsd-signature-type">EventEmitter</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2810">definitions/lunalite-pixi-mv.d.ts:2810</a></li>
+											</ul>
+										</aside>
+										<h4 class="tsd-returns-title">Returns <a href="pixi.utils.eventemitter.html" class="tsd-signature-type">EventEmitter</a></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>prefixed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></h5>
+							</li>
+						</ul>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="tickeradded" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> ticker<wbr>Added</h3>
-					<div class="tsd-signature tsd-kind-icon">ticker<wbr>Added<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="prefixed-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> prefixed</h3>
+					<div class="tsd-signature tsd-kind-icon">prefixed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#prefixed-1">prefixed</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11480</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2809">definitions/lunalite-pixi-mv.d.ts:2809</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Has the system ticker been added?</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{boolean} PIXI.interaction.InteractionManager#tickerAdded</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="usesystemticker" class="tsd-anchor"></a>
-					<h3>use<wbr>System<wbr>Ticker</h3>
-					<div class="tsd-signature tsd-kind-icon">use<wbr>System<wbr>Ticker<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:11534</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Should the InteractionManager automatically add <a href="pixi.interaction.interactionmanager.html#tickerupdate">tickerUpdate</a> to <a href="pixi.ticker.html#system">PIXI.Ticker.system</a>.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{boolean}</p>
-							</dd>
-							<dt>default</dt>
-							<dd><p>true</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="addevents" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> add<wbr>Events</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Events<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2045">definitions/lunalite-pixi-mv.d.ts:2045</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="addlistener" class="tsd-anchor"></a>
 					<h3>add<wbr>Listener</h3>
@@ -572,9 +860,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="pixi.abstractrenderer.html">AbstractRenderer</a>.<a href="pixi.abstractrenderer.html#addlistener">addListener</a></p>
+								<p>Inherited from <a href="pixi.systemrenderer.html">SystemRenderer</a>.<a href="pixi.systemrenderer.html#addlistener">addListener</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:24076</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2900">definitions/lunalite-pixi-mv.d.ts:2900</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -598,6 +886,35 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="configureinteractioneventfordomevent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> configure<wbr>Interaction<wbr>Event<wbr>ForDOMEvent</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">configure<wbr>Interaction<wbr>Event<wbr>ForDOMEvent<span class="tsd-signature-symbol">(</span>interactionEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a>, pointerEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a>, interactionData<span class="tsd-signature-symbol">: </span><a href="pixi.interaction.interactiondata.html" class="tsd-signature-type">InteractionData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2067">definitions/lunalite-pixi-mv.d.ts:2067</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>interactionEvent: <a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a></h5>
+								</li>
+								<li>
+									<h5>pointerEvent: <a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a></h5>
+								</li>
+								<li>
+									<h5>interactionData: <a href="pixi.interaction.interactiondata.html" class="tsd-signature-type">InteractionData</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="destroy" class="tsd-anchor"></a>
 					<h3>destroy</h3>
@@ -608,14 +925,38 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:11602</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2069">definitions/lunalite-pixi-mv.d.ts:2069</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Destroys the interaction manager</p>
-								</div>
-							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="dispatchevent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> dispatch<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">dispatch<wbr>Event<span class="tsd-signature-symbol">(</span>displayObject<span class="tsd-signature-symbol">: </span><a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a>, eventString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, eventData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2049">definitions/lunalite-pixi-mv.d.ts:2049</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>displayObject: <a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a></h5>
+								</li>
+								<li>
+									<h5>eventString: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>eventData: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -629,9 +970,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="pixi.abstractrenderer.html">AbstractRenderer</a>.<a href="pixi.abstractrenderer.html#emit">emit</a></p>
+								<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#emit">emit</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:24022</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2852">definitions/lunalite-pixi-mv.d.ts:2852</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -668,9 +1009,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="pixi.abstractrenderer.html">AbstractRenderer</a>.<a href="pixi.abstractrenderer.html#eventnames">eventNames</a></p>
+								<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#eventnames">eventNames</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:23996</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2827">definitions/lunalite-pixi-mv.d.ts:2827</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -679,6 +1020,29 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/regexpmatcharray.html#array" class="tsd-signature-type">Array</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="getinteractiondataforpointerid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Interaction<wbr>Data<wbr>For<wbr>Pointer<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Interaction<wbr>Data<wbr>For<wbr>Pointer<wbr>Id<span class="tsd-signature-symbol">(</span>pointerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.interaction.interactiondata.html" class="tsd-signature-type">InteractionData</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2065">definitions/lunalite-pixi-mv.d.ts:2065</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pointerId: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="pixi.interaction.interactiondata.html" class="tsd-signature-type">InteractionData</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -692,60 +1056,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:11543</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2043">definitions/lunalite-pixi-mv.d.ts:2043</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Hit tests a point against the display tree, returning the first interactive object that is hit.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>globalPoint: <a href="pixi.point.html" class="tsd-signature-type">Point</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A point to hit test with, in global space.</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> root: <a href="pixi.container.html" class="tsd-signature-type">Container</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="pixi.displayobject.html" class="tsd-signature-type">DisplayObject</a></h4>
-							<p>The hit display object, if any.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="listenercount" class="tsd-anchor"></a>
-					<h3>listener<wbr>Count</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">listener<wbr>Count<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="pixi.abstractrenderer.html">AbstractRenderer</a>.<a href="pixi.abstractrenderer.html#listenercount">listenerCount</a></p>
-								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:24013</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Return the number of listeners listening to a given event.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The event name.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -753,14 +1076,15 @@
 					<a name="listeners" class="tsd-anchor"></a>
 					<h3>listeners</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">listeners<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/regexpmatcharray.html#array" class="tsd-signature-type">Array</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/function.html" class="tsd-signature-type">Function</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">listeners<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/function.html" class="tsd-signature-type">Function</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">listeners<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, exists<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="pixi.abstractrenderer.html">AbstractRenderer</a>.<a href="pixi.abstractrenderer.html#listeners">listeners</a></p>
+								<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#listeners">listeners</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:24005</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2835">definitions/lunalite-pixi-mv.d.ts:2835</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -777,7 +1101,37 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/regexpmatcharray.html#array" class="tsd-signature-type">Array</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/function.html" class="tsd-signature-type">Function</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/function.html" class="tsd-signature-type">Function</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#listeners">listeners</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2844">definitions/lunalite-pixi-mv.d.ts:2844</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if there listeners for a given event.
+									If <code>exists</code> argument is not <code>true</code> lists listeners.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The event name.</p>
+									</div>
+								</li>
+								<li>
+									<h5>exists: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Only check if there are listeners.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -791,38 +1145,45 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:11581</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2050">definitions/lunalite-pixi-mv.d.ts:2050</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Maps x and y coords from a DOM object and maps them correctly to the PixiJS view. The
-										resulting value is stored in the point. This takes into account the fact that the DOM
-									element could be scaled and positioned anywhere on the screen.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>point: <a href="pixi.point.html" class="tsd-signature-type">Point</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>the point that the result will be stored in</p>
-									</div>
 								</li>
 								<li>
 									<h5>x: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>the x coord of the position to map</p>
-									</div>
 								</li>
 								<li>
 									<h5>y: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>the y coord of the position to map</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="normalizetopointerdata" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> normalize<wbr>ToPointer<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">normalize<wbr>ToPointer<wbr>Data<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/touchevent.html" class="tsd-signature-type">TouchEvent</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/dragevent.html#mouseevent" class="tsd-signature-type">MouseEvent</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2068">definitions/lunalite-pixi-mv.d.ts:2068</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <a href="../interfaces/touchevent.html" class="tsd-signature-type">TouchEvent</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/dragevent.html#mouseevent" class="tsd-signature-type">MouseEvent</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -835,9 +1196,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="pixi.abstractrenderer.html">AbstractRenderer</a>.<a href="pixi.abstractrenderer.html#off">off</a></p>
+								<p>Inherited from <a href="pixi.systemrenderer.html">SystemRenderer</a>.<a href="pixi.systemrenderer.html#off">off</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:24070</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2895">definitions/lunalite-pixi-mv.d.ts:2895</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -873,9 +1234,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="pixi.abstractrenderer.html">AbstractRenderer</a>.<a href="pixi.abstractrenderer.html#on">on</a></p>
+								<p>Inherited from <a href="pixi.systemrenderer.html">SystemRenderer</a>.<a href="pixi.systemrenderer.html#on">on</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:24033</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2862">definitions/lunalite-pixi-mv.d.ts:2862</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -906,6 +1267,35 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="onpointercomplete" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Pointer<wbr>Complete</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Pointer<wbr>Complete<span class="tsd-signature-symbol">(</span>originalEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a>, cancelled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, func<span class="tsd-signature-symbol">: </span><a href="../interfaces/function.html" class="tsd-signature-type">Function</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2060">definitions/lunalite-pixi-mv.d.ts:2060</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>originalEvent: <a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a></h5>
+								</li>
+								<li>
+									<h5>cancelled: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>func: <a href="../interfaces/function.html" class="tsd-signature-type">Function</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="once" class="tsd-anchor"></a>
 					<h3>once</h3>
@@ -915,9 +1305,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="pixi.abstractrenderer.html">AbstractRenderer</a>.<a href="pixi.abstractrenderer.html#once">once</a></p>
+								<p>Inherited from <a href="pixi.systemrenderer.html">SystemRenderer</a>.<a href="pixi.systemrenderer.html#once">once</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:24044</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2872">definitions/lunalite-pixi-mv.d.ts:2872</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -952,61 +1342,54 @@
 					<a name="processinteractive" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> process<wbr>Interactive</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">process<wbr>Interactive<span class="tsd-signature-symbol">(</span>interactionEvent<span class="tsd-signature-symbol">: </span><a href="pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a>, displayObject<span class="tsd-signature-symbol">: </span><a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.tilingsprite.html" class="tsd-signature-type">TilingSprite</a>, func<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span>, hitTest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">process<wbr>Interactive<span class="tsd-signature-symbol">(</span>interactionEvent<span class="tsd-signature-symbol">: </span><a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a>, displayObject<span class="tsd-signature-symbol">: </span><a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a>, func<span class="tsd-signature-symbol">?: </span><a href="../interfaces/function.html" class="tsd-signature-type">Function</a>, hitTest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, interactive<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:11597</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2052">definitions/lunalite-pixi-mv.d.ts:2052</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>This function is provides a neat way of crawling through the scene graph and running a
-										specified function on all interactive objects it finds. It will also take care of hit
-									testing the interactive objects and passes the hit across in the function.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>interactionEvent: <a href="pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>event containing the point that
-										is tested for collision</p>
-									</div>
+									<h5>interactionEvent: <a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-signature-type">InteractionEvent</a></h5>
 								</li>
 								<li>
-									<h5>displayObject: <a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.tilingsprite.html" class="tsd-signature-type">TilingSprite</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>the displayObject
-										that will be hit test (recursively crawls its children)</p>
-									</div>
+									<h5>displayObject: <a href="pixi.container.html" class="tsd-signature-type">Container</a><span class="tsd-signature-symbol"> | </span><a href="pixi.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> | </span><a href="pixi.extras.tilingsprite.html" class="tsd-signature-type">TilingSprite</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> func: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>params: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> func: <a href="../interfaces/function.html" class="tsd-signature-type">Function</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> hitTest: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> interactive: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="releaseinteractiondataforpointerid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> release<wbr>Interaction<wbr>Data<wbr>For<wbr>Pointer<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">release<wbr>Interaction<wbr>Data<wbr>For<wbr>Pointer<wbr>Id<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2066">definitions/lunalite-pixi-mv.d.ts:2066</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <a href="../interfaces/pointerevent.html" class="tsd-signature-type">PointerEvent</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1022,9 +1405,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="pixi.abstractrenderer.html">AbstractRenderer</a>.<a href="pixi.abstractrenderer.html#removealllisteners">removeAllListeners</a></p>
+								<p>Inherited from <a href="pixi.systemrenderer.html">SystemRenderer</a>.<a href="pixi.systemrenderer.html#removealllisteners">removeAllListeners</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:24064</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2890">definitions/lunalite-pixi-mv.d.ts:2890</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1046,6 +1429,23 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="removeevents" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> remove<wbr>Events</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Events<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2046">definitions/lunalite-pixi-mv.d.ts:2046</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="removelistener" class="tsd-anchor"></a>
 					<h3>remove<wbr>Listener</h3>
@@ -1055,9 +1455,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="pixi.abstractrenderer.html">AbstractRenderer</a>.<a href="pixi.abstractrenderer.html#removelistener">removeListener</a></p>
+								<p>Inherited from <a href="pixi.systemrenderer.html">SystemRenderer</a>.<a href="pixi.systemrenderer.html#removelistener">removeListener</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:24056</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2883">definitions/lunalite-pixi-mv.d.ts:2883</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1107,54 +1507,63 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:11571</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2048">definitions/lunalite-pixi-mv.d.ts:2048</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Sets the current cursor mode, handling any callbacks or CSS style changes.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>mode: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>cursor mode, a key from the cursorStyles dictionary</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setmaxlisteners" class="tsd-anchor"></a>
+					<h3>set<wbr>Max<wbr>Listeners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Max<wbr>Listeners<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#setmaxlisteners">setMaxListeners</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2905">definitions/lunalite-pixi-mv.d.ts:2905</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This function doesn&#39;t apply anymore.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 					<a name="settargetelement" class="tsd-anchor"></a>
-					<h3>set<wbr>Target<wbr>Element</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Target<wbr>Element<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><a href="../interfaces/htmlanchorelement.html#htmlelement" class="tsd-signature-type">HTMLElement</a>, resolution<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> set<wbr>Target<wbr>Element</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Target<wbr>Element<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><a href="../interfaces/htmlcanvaselement.html" class="tsd-signature-type">HTMLCanvasElement</a>, resolution<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:11552</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2044">definitions/lunalite-pixi-mv.d.ts:2044</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Sets the DOM element which will receive mouse/touch events. This is useful for when you have
-										other DOM elements on top of the renderers Canvas element. With this you&#39;ll be bale to delegate
-									another DOM element to receive those events.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>element: <a href="../interfaces/htmlanchorelement.html#htmlelement" class="tsd-signature-type">HTMLElement</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>the DOM element which will receive mouse and touch events.</p>
-									</div>
+									<h5>element: <a href="../interfaces/htmlcanvaselement.html" class="tsd-signature-type">HTMLCanvasElement</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> resolution: <span class="tsd-signature-type">number</span></h5>
@@ -1165,56 +1574,24 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="tickerupdate" class="tsd-anchor"></a>
-					<h3>ticker<wbr>Update</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">ticker<wbr>Update<span class="tsd-signature-symbol">(</span>deltaTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:11561</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Updates the state of interactive objects if at least <a href="pixi.interaction.interactionmanager.html#interactionfrequency">interactionFrequency</a>
-									milliseconds have passed since the last invocation.</p>
-								</div>
-								<p>Invoked by a throttled ticker update from <a href="pixi.ticker.html#system">PIXI.Ticker.system</a>.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>deltaTime: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>time delta since the last call</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>deltaTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:11565</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2047">definitions/lunalite-pixi-mv.d.ts:2047</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Updates the state of interactive objects.</p>
-								</div>
-							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> deltaTime: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -1227,64 +1604,61 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="label tsd-is-external">
-						<span>Internals</span>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_pixi_js_.html">&quot;pixi.js&quot;</a>
-					</li>
 					<li class="current tsd-kind-namespace">
 						<a href="../modules/pixi.html">PIXI</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.const.html">CONST</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.canvastinter.html">Canvas<wbr>Tinter</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.groupd8.html">Group<wbr>D8</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.accessibility.html">accessibility</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.core.html">core</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.extract.html">extract</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.extras.html">extras</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.filters.html">filters</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.graphicsutils.html">graphics<wbr>Utils</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.groupd8.html">group<wbr>D8</a>
+								<a href="../modules/pixi.glcore.html">gl<wbr>Core</a>
 							</li>
 							<li class="current tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.interaction.html">interaction</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.resources.html">resources</a>
+								<a href="../modules/pixi.loaders.html">loaders</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.mesh.html">mesh</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.particles.html">particles</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.prepare.html">prepare</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.settings.html">settings</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.systems.html">systems</a>
+								<a href="../modules/pixi.ticker.html">ticker</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.utils.html">utils</a>
 							</li>
 						</ul>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="../modules/haxe.html">haxe</a>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="../modules/pixi.html">pixi</a>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="../modules/rm.html">rm</a>
-					</li>
-					<li class="label tsd-is-external">
-						<span>Externals</span>
-					</li>
-					<li class=" tsd-kind-namespace tsd-is-external">
-						<a href="../modules/css.html">CSS</a>
-					</li>
-					<li class=" tsd-kind-namespace tsd-is-external">
-						<a href="../modules/intl.html">Intl</a>
-					</li>
-					<li class=" tsd-kind-namespace tsd-is-external">
-						<a href="../modules/webassembly.html">Web<wbr>Assembly</a>
 					</li>
 				</ul>
 			</nav>
@@ -1293,16 +1667,19 @@
 					<li class=" tsd-kind-class tsd-parent-kind-namespace">
 						<a href="pixi.interaction.interactiondata.html" class="tsd-kind-icon">Interaction<wbr>Data</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-namespace">
-						<a href="pixi.interaction.interactionevent.html" class="tsd-kind-icon">Interaction<wbr>Event</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-namespace">
 						<a href="pixi.interaction.interactionmanager.html" class="tsd-kind-icon">Interaction<wbr>Manager</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="pixi.interaction.interactionmanager.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#_temppoint" class="tsd-kind-icon">_temp<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="pixi.interaction.interactionmanager.html#activeinteractiondata" class="tsd-kind-icon">active<wbr>Interaction<wbr>Data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="pixi.interaction.interactionmanager.html#autopreventdefault" class="tsd-kind-icon">auto<wbr>Prevent<wbr>Default</a>
@@ -1311,16 +1688,28 @@
 								<a href="pixi.interaction.interactionmanager.html#currentcursormode" class="tsd-kind-icon">current<wbr>Cursor<wbr>Mode</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="pixi.interaction.interactionmanager.html#currentcursorstyle" class="tsd-kind-icon">current<wbr>Cursor<wbr>Style</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="pixi.interaction.interactionmanager.html#cursor" class="tsd-kind-icon">cursor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="pixi.interaction.interactionmanager.html#cursorstyles" class="tsd-kind-icon">cursor<wbr>Styles</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="pixi.interaction.interactionmanager.html#defaultcursorstyle" class="tsd-kind-icon">default<wbr>Cursor<wbr>Style</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="pixi.interaction.interactionmanager.html#eventdata" class="tsd-kind-icon">event<wbr>Data</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="pixi.interaction.interactionmanager.html#eventsadded" class="tsd-kind-icon">events<wbr>Added</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="pixi.interaction.interactionmanager.html#interactiondomelement" class="tsd-kind-icon">interactionDOMElement</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="pixi.interaction.interactionmanager.html#interactiondatapool" class="tsd-kind-icon">interaction<wbr>Data<wbr>Pool</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="pixi.interaction.interactionmanager.html#interactionfrequency" class="tsd-kind-icon">interaction<wbr>Frequency</a>
@@ -1334,6 +1723,39 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="pixi.interaction.interactionmanager.html#movewheninside" class="tsd-kind-icon">move<wbr>When<wbr>Inside</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#onpointercancel" class="tsd-kind-icon">on<wbr>Pointer<wbr>Cancel</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#onpointerdown" class="tsd-kind-icon">on<wbr>Pointer<wbr>Down</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#onpointermove" class="tsd-kind-icon">on<wbr>Pointer<wbr>Move</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#onpointerout" class="tsd-kind-icon">on<wbr>Pointer<wbr>Out</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#onpointerover" class="tsd-kind-icon">on<wbr>Pointer<wbr>Over</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#onpointerup" class="tsd-kind-icon">on<wbr>Pointer<wbr>Up</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#processpointercancel" class="tsd-kind-icon">process<wbr>Pointer<wbr>Cancel</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#processpointerdown" class="tsd-kind-icon">process<wbr>Pointer<wbr>Down</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#processpointermove" class="tsd-kind-icon">process<wbr>Pointer<wbr>Move</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#processpointeroverout" class="tsd-kind-icon">process<wbr>Pointer<wbr>Over<wbr>Out</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#processpointerup" class="tsd-kind-icon">process<wbr>Pointer<wbr>Up</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="pixi.interaction.interactionmanager.html#renderer" class="tsd-kind-icon">renderer</a>
 							</li>
@@ -1346,17 +1768,26 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="pixi.interaction.interactionmanager.html#supportstouchevents" class="tsd-kind-icon">supports<wbr>Touch<wbr>Events</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="pixi.interaction.interactionmanager.html#tickeradded" class="tsd-kind-icon">ticker<wbr>Added</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="pixi.interaction.interactionmanager.html#eventemitter" class="tsd-kind-icon">Event<wbr>Emitter</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="pixi.interaction.interactionmanager.html#usesystemticker" class="tsd-kind-icon">use<wbr>System<wbr>Ticker</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="pixi.interaction.interactionmanager.html#prefixed-1" class="tsd-kind-icon">prefixed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#addevents" class="tsd-kind-icon">add<wbr>Events</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.interaction.interactionmanager.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#configureinteractioneventfordomevent" class="tsd-kind-icon">configure<wbr>Interaction<wbr>Event<wbr>ForDOMEvent</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="pixi.interaction.interactionmanager.html#destroy" class="tsd-kind-icon">destroy</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#dispatchevent" class="tsd-kind-icon">dispatch<wbr>Event</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.interaction.interactionmanager.html#emit" class="tsd-kind-icon">emit</a>
@@ -1364,11 +1795,11 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.interaction.interactionmanager.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#getinteractiondataforpointerid" class="tsd-kind-icon">get<wbr>Interaction<wbr>Data<wbr>For<wbr>Pointer<wbr>Id</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="pixi.interaction.interactionmanager.html#hittest" class="tsd-kind-icon">hit<wbr>Test</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="pixi.interaction.interactionmanager.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.interaction.interactionmanager.html#listeners" class="tsd-kind-icon">listeners</a>
@@ -1376,11 +1807,17 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="pixi.interaction.interactionmanager.html#mappositiontopoint" class="tsd-kind-icon">map<wbr>Position<wbr>ToPoint</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#normalizetopointerdata" class="tsd-kind-icon">normalize<wbr>ToPointer<wbr>Data</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.interaction.interactionmanager.html#off" class="tsd-kind-icon">off</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.interaction.interactionmanager.html#on" class="tsd-kind-icon">on</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#onpointercomplete" class="tsd-kind-icon">on<wbr>Pointer<wbr>Complete</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.interaction.interactionmanager.html#once" class="tsd-kind-icon">once</a>
@@ -1388,8 +1825,14 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="pixi.interaction.interactionmanager.html#processinteractive" class="tsd-kind-icon">process<wbr>Interactive</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#releaseinteractiondataforpointerid" class="tsd-kind-icon">release<wbr>Interaction<wbr>Data<wbr>For<wbr>Pointer<wbr>Id</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.interaction.interactionmanager.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#removeevents" class="tsd-kind-icon">remove<wbr>Events</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.interaction.interactionmanager.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
@@ -1397,11 +1840,11 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="pixi.interaction.interactionmanager.html#setcursormode" class="tsd-kind-icon">set<wbr>Cursor<wbr>Mode</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="pixi.interaction.interactionmanager.html#settargetelement" class="tsd-kind-icon">set<wbr>Target<wbr>Element</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="pixi.interaction.interactionmanager.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="pixi.interaction.interactionmanager.html#tickerupdate" class="tsd-kind-icon">ticker<wbr>Update</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.interaction.interactionmanager.html#settargetelement" class="tsd-kind-icon">set<wbr>Target<wbr>Element</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="pixi.interaction.interactionmanager.html#update" class="tsd-kind-icon">update</a>
@@ -1413,14 +1856,23 @@
 					<li class=" tsd-kind-class tsd-parent-kind-namespace">
 						<a href="pixi.interaction.interactivetarget.html" class="tsd-kind-icon">interactive<wbr>Target</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/pixi.interaction.interactionevent.html" class="tsd-kind-icon">Interaction<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/pixi.interaction.interactionmanageroptions.html" class="tsd-kind-icon">Interaction<wbr>Manager<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/pixi.interaction.interactiontrackingdata.html" class="tsd-kind-icon">Interaction<wbr>Tracking<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/pixi.interaction.interactivetarget-1.html" class="tsd-kind-icon">Interactive<wbr>Target</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
 						<a href="../modules/pixi.interaction.html#interactioneventtypes" class="tsd-kind-icon">Interaction<wbr>Event<wbr>Types</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
 						<a href="../modules/pixi.interaction.html#interactionmouseevents" class="tsd-kind-icon">Interaction<wbr>Mouse<wbr>Events</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
-						<a href="../modules/pixi.interaction.html#interactionpixievents" class="tsd-kind-icon">Interaction<wbr>Pixi<wbr>Events</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
 						<a href="../modules/pixi.interaction.html#interactionpointerevents" class="tsd-kind-icon">Interaction<wbr>Pointer<wbr>Events</a>
@@ -1451,11 +1903,15 @@
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 		</div>
 	</div>

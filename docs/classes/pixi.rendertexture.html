@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RenderTexture | Lunalite-MZ</title>
-	<meta name="description" content="Documentation for Lunalite-MZ">
+	<title>RenderTexture | LunaLite-MV</title>
+	<meta name="description" content="Documentation for LunaLite-MV">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">Lunalite-MZ</a>
+					<a href="../index.html" class="title">LunaLite-MV</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -69,41 +69,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A RenderTexture is a special texture that allows any PixiJS display object to be rendered to it.</p>
-					</div>
-					<p><strong>Hint</strong>: All DisplayObjects (i.e. Sprites) that render to a RenderTexture should be preloaded
-					otherwise black rectangles will be drawn instead.</p>
-					<p><strong>Hint-2</strong>: The actual memory allocation will happen on first render.
-					You shouldn&#39;t create renderTextures each frame just to delete them after, try to reuse them.</p>
-					<p>A RenderTexture takes a snapshot of any Display Object given to its render method. For example:</p>
-					<pre><code class="language-js"><span class="hljs-keyword">let</span> renderer = PIXI.autoDetectRenderer();
-<span class="hljs-keyword">let</span> renderTexture = PIXI.RenderTexture.create({ <span class="hljs-attr">width</span>: <span class="hljs-number">800</span>, <span class="hljs-attr">height</span>: <span class="hljs-number">600</span> });
-<span class="hljs-keyword">let</span> sprite = PIXI.Sprite.from(<span class="hljs-string">&quot;spinObj_01.png&quot;</span>);
-
-sprite.position.x = <span class="hljs-number">800</span>/<span class="hljs-number">2</span>;
-sprite.position.y = <span class="hljs-number">600</span>/<span class="hljs-number">2</span>;
-sprite.anchor.x = <span class="hljs-number">0.5</span>;
-sprite.anchor.y = <span class="hljs-number">0.5</span>;
-
-renderer.render(sprite, renderTexture);</code></pre>
-					<p>The Sprite in this case will be rendered using its local transform. To render this sprite at 0,0
-					you can clear the transform</p>
-					<pre><code class="language-js">
-sprite.setTransform()
-
-<span class="hljs-keyword">let</span> renderTexture = <span class="hljs-keyword">new</span> PIXI.RenderTexture.create(<span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
-
-renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders to center of RenderTexture</span></code></pre>
-					<dl class="tsd-comment-tags">
-						<dt>memberof</dt>
-						<dd><p>PIXI</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -130,45 +95,61 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#_frame" class="tsd-kind-icon">_frame</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="pixi.rendertexture.html#_updateid" class="tsd-kind-icon">_updateID</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="pixi.rendertexture.html#_uvs" class="tsd-kind-icon">_uvs</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#basetexture" class="tsd-kind-icon">base<wbr>Texture</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#defaultanchor" class="tsd-kind-icon">default<wbr>Anchor</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.rendertexture.html#filterframe" class="tsd-kind-icon">filter<wbr>Frame</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.rendertexture.html#filterpoolkey" class="tsd-kind-icon">filter<wbr>Pool<wbr>Key</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#frame" class="tsd-kind-icon">frame</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#height" class="tsd-kind-icon">height</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#noframe" class="tsd-kind-icon">no<wbr>Frame</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#orig" class="tsd-kind-icon">orig</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#requiresupdate" class="tsd-kind-icon">requires<wbr>Update</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#resolution" class="tsd-kind-icon">resolution</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#rotate" class="tsd-kind-icon">rotate</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#texturecacheids" class="tsd-kind-icon">texture<wbr>Cache<wbr>Ids</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#trim" class="tsd-kind-icon">trim</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#uvmatrix" class="tsd-kind-icon">uv<wbr>Matrix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="pixi.rendertexture.html#_frame" class="tsd-kind-icon">_frame</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="pixi.rendertexture.html#_rotate" class="tsd-kind-icon">_rotate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="pixi.rendertexture.html#_updateid" class="tsd-kind-icon">_updateID</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="pixi.rendertexture.html#_uvs" class="tsd-kind-icon">_uvs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#basetexture" class="tsd-kind-icon">base<wbr>Texture</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#frame" class="tsd-kind-icon">frame</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#height" class="tsd-kind-icon">height</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.rendertexture.html#legacyrenderer" class="tsd-kind-icon">legacy<wbr>Renderer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#noframe" class="tsd-kind-icon">no<wbr>Frame</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#orig" class="tsd-kind-icon">orig</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#requiresupdate" class="tsd-kind-icon">requires<wbr>Update</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#rotate" class="tsd-kind-icon">rotate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#texturecacheids" class="tsd-kind-icon">texture<wbr>Cache<wbr>Ids</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#transform" class="tsd-kind-icon">transform</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#trim" class="tsd-kind-icon">trim</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#valid" class="tsd-kind-icon">valid</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#width" class="tsd-kind-icon">width</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#width" class="tsd-kind-icon">width</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#empty" class="tsd-kind-icon">EMPTY</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#eventemitter" class="tsd-kind-icon">Event<wbr>Emitter</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#white" class="tsd-kind-icon">WHITE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#prefixed-1" class="tsd-kind-icon">prefixed</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#clone" class="tsd-kind-icon">clone</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#destroy" class="tsd-kind-icon">destroy</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="pixi.rendertexture.html#onbasetextureupdated" class="tsd-kind-icon">on<wbr>Base<wbr>Texture<wbr>Updated</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="pixi.rendertexture.html#_updateuvs" class="tsd-kind-icon">_update<wbr>Uvs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="pixi.rendertexture.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#clone" class="tsd-kind-icon">clone</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#destroy" class="tsd-kind-icon">destroy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#emit" class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#listeners" class="tsd-kind-icon">listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="pixi.rendertexture.html#off" class="tsd-kind-icon">off</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="pixi.rendertexture.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="pixi.rendertexture.html#onbasetextureloaded" class="tsd-kind-icon">on<wbr>Base<wbr>Texture<wbr>Loaded</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="pixi.rendertexture.html#onbasetextureupdated" class="tsd-kind-icon">on<wbr>Base<wbr>Texture<wbr>Updated</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="pixi.rendertexture.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="pixi.rendertexture.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="pixi.rendertexture.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.rendertexture.html#resize" class="tsd-kind-icon">resize</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.rendertexture.html#setresolution" class="tsd-kind-icon">set<wbr>Resolution</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#update" class="tsd-kind-icon">update</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="pixi.rendertexture.html#updateuvs" class="tsd-kind-icon">update<wbr>Uvs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="pixi.rendertexture.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#addtexturetocache" class="tsd-kind-icon">add<wbr>Texture<wbr>ToCache</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#addtocache" class="tsd-kind-icon">add<wbr>ToCache</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="pixi.rendertexture.html#create" class="tsd-kind-icon">create</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#from" class="tsd-kind-icon">from</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#frombuffer" class="tsd-kind-icon">from<wbr>Buffer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#fromcanvas" class="tsd-kind-icon">from<wbr>Canvas</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#fromframe" class="tsd-kind-icon">from<wbr>Frame</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#fromimage" class="tsd-kind-icon">from<wbr>Image</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#fromloader" class="tsd-kind-icon">from<wbr>Loader</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#fromvideo" class="tsd-kind-icon">from<wbr>Video</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#fromvideourl" class="tsd-kind-icon">from<wbr>Video<wbr>Url</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#removefromcache" class="tsd-kind-icon">remove<wbr>From<wbr>Cache</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="pixi.rendertexture.html#removetexturefromcache" class="tsd-kind-icon">remove<wbr>Texture<wbr>From<wbr>Cache</a></li>
 							</ul>
 						</section>
 					</div>
@@ -187,7 +168,7 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 							<aside class="tsd-sources">
 								<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:3484</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1507">definitions/lunalite-pixi-mv.d.ts:1507</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -206,386 +187,169 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_frame" class="tsd-anchor"></a>
-					<h3>_frame</h3>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _frame</h3>
 					<div class="tsd-signature tsd-kind-icon">_frame<span class="tsd-signature-symbol">:</span> <a href="pixi.rectangle.html" class="tsd-signature-type">Rectangle</a></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#_frame">_frame</a></p>
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#_frame">_frame</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3567</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1522">definitions/lunalite-pixi-mv.d.ts:1522</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>This is the area of the BaseTexture image to actually copy to the Canvas / WebGL when rendering,
-							irrespective of the actual frame size or placement (which can be influenced by trimmed texture atlases)</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{PIXI.Rectangle} PIXI.Texture#_frame</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_rotate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _rotate</h3>
+					<div class="tsd-signature tsd-kind-icon">_rotate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">0</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#_rotate">_rotate</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1554">definitions/lunalite-pixi-mv.d.ts:1554</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_updateid" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _updateID</h3>
 					<div class="tsd-signature tsd-kind-icon">_updateID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#_updateid">_updateID</a></p>
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#_updateid">_updateID</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3615</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1528">definitions/lunalite-pixi-mv.d.ts:1528</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Update ID is observed by sprites and TextureMatrix instances.
-							Call updateUvs() to increment it.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{number} PIXI.Texture#_updateID</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_uvs" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _uvs</h3>
 					<div class="tsd-signature tsd-kind-icon">_uvs<span class="tsd-signature-symbol">:</span> <a href="pixi.textureuvs.html" class="tsd-signature-type">TextureUvs</a></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#_uvs">_uvs</a></p>
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#_uvs">_uvs</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3587</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1526">definitions/lunalite-pixi-mv.d.ts:1526</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The WebGL UV data cache. Can be used as quad UV</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{PIXI.TextureUvs} PIXI.Texture#_uvs</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="basetexture" class="tsd-anchor"></a>
 					<h3>base<wbr>Texture</h3>
 					<div class="tsd-signature tsd-kind-icon">base<wbr>Texture<span class="tsd-signature-symbol">:</span> <a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#basetexture">baseTexture</a></p>
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#basetexture">baseTexture</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3560</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1521">definitions/lunalite-pixi-mv.d.ts:1521</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The base texture that this texture uses.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{PIXI.BaseTexture} PIXI.Texture#baseTexture</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-					<a name="defaultanchor" class="tsd-anchor"></a>
-					<h3>default<wbr>Anchor</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>Anchor<span class="tsd-signature-symbol">:</span> <a href="pixi.point.html" class="tsd-signature-type">Point</a></div>
-					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#defaultanchor">defaultAnchor</a></p>
-						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3607</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Anchor point that is used as default if sprite is created with this texture.
-							Changing the <code>defaultAnchor</code> at a later point of time will not update Sprite&#39;s anchor point.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{PIXI.Point} PIXI.Texture#defaultAnchor</p>
-							</dd>
-							<dt>default</dt>
-							<dd><p>{0,0}</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="filterframe" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> filter<wbr>Frame</h3>
-					<div class="tsd-signature tsd-kind-icon">filter<wbr>Frame<span class="tsd-signature-symbol">:</span> <a href="pixi.rectangle.html" class="tsd-signature-type">Rectangle</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3499</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Stores <code>sourceFrame</code> when this texture is inside current filter stack.
-							You can read it inside filters.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>readonly</dt>
-							<dd></dd>
-							<dt>member</dt>
-							<dd><p>{PIXI.Rectangle} PIXI.RenderTexture#filterFrame</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="filterpoolkey" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> filter<wbr>Pool<wbr>Key</h3>
-					<div class="tsd-signature tsd-kind-icon">filter<wbr>Pool<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3505</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The key for pooled texture of FilterSystem</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string} PIXI.RenderTexture#filterPoolKey</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="frame" class="tsd-anchor"></a>
 					<h3>frame</h3>
 					<div class="tsd-signature tsd-kind-icon">frame<span class="tsd-signature-symbol">:</span> <a href="pixi.rectangle.html" class="tsd-signature-type">Rectangle</a></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#frame">frame</a></p>
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#frame">frame</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3670</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1553">definitions/lunalite-pixi-mv.d.ts:1553</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The frame specifies the region of the base texture that this texture uses.
-							Please call <code>updateUvs()</code> after you change coordinates of <code>frame</code> manually.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{PIXI.Rectangle}</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="height" class="tsd-anchor"></a>
 					<h3>height</h3>
 					<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#height">height</a></p>
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#height">height</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3692</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1557">definitions/lunalite-pixi-mv.d.ts:1557</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The height of the Texture in pixels.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{number}</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="legacyrenderer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> legacy<wbr>Renderer</h3>
+					<div class="tsd-signature tsd-kind-icon">legacy<wbr>Renderer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1510">definitions/lunalite-pixi-mv.d.ts:1510</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="noframe" class="tsd-anchor"></a>
 					<h3>no<wbr>Frame</h3>
 					<div class="tsd-signature tsd-kind-icon">no<wbr>Frame<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#noframe">noFrame</a></p>
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#noframe">noFrame</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3554</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1520">definitions/lunalite-pixi-mv.d.ts:1520</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Does this Texture have any frame data assigned to it?</p>
-						</div>
-						<p>This mode is enabled automatically if no frame was passed inside constructor.</p>
-						<p>In this mode texture is subscribed to baseTexture events, and fires <code>update</code> on any change.</p>
-						<p>Beware, after loading or resize of baseTexture event can fired two times!
-						If you want more control, subscribe on baseTexture itself.</p>
-						<pre><code class="language-js">texture.on(<span class="hljs-string">&#x27;update&#x27;</span>, <span class="hljs-function">() =&gt;</span> {});</code></pre>
-						<p>Any assignment of <code>frame</code> switches off <code>noFrame</code> mode.</p>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{boolean} PIXI.Texture#noFrame</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="orig" class="tsd-anchor"></a>
 					<h3>orig</h3>
 					<div class="tsd-signature tsd-kind-icon">orig<span class="tsd-signature-symbol">:</span> <a href="pixi.rectangle.html" class="tsd-signature-type">Rectangle</a></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#orig">orig</a></p>
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#orig">orig</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3600</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1527">definitions/lunalite-pixi-mv.d.ts:1527</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>This is the area of original texture, before it was put in atlas</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{PIXI.Rectangle} PIXI.Texture#orig</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="requiresupdate" class="tsd-anchor"></a>
 					<h3>requires<wbr>Update</h3>
 					<div class="tsd-signature tsd-kind-icon">requires<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#requiresupdate">requiresUpdate</a></p>
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#requiresupdate">requiresUpdate</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3580</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1525">definitions/lunalite-pixi-mv.d.ts:1525</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>This will let a renderer know that a texture has been updated (used mainly for WebGL uv updates)</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{boolean} PIXI.Texture#requiresUpdate</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-					<a name="resolution" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> resolution</h3>
-					<div class="tsd-signature tsd-kind-icon">resolution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#resolution">resolution</a></p>
-						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3663</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Returns resolution of baseTexture</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{number}</p>
-							</dd>
-							<dt>readonly</dt>
-							<dd></dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="rotate" class="tsd-anchor"></a>
 					<h3>rotate</h3>
 					<div class="tsd-signature tsd-kind-icon">rotate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#rotate">rotate</a></p>
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#rotate">rotate</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3680</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1555">definitions/lunalite-pixi-mv.d.ts:1555</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Indicates whether the texture is rotated inside the atlas
-								set to 2 to compensate for texture packer rotation
-								set to 6 to compensate for spine packer rotation
-								can be used to rotate or mirror sprites
-							See <a href="../modules/pixi.groupd8.html">PIXI.groupD8</a> for explanation</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{number}</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="texturecacheids" class="tsd-anchor"></a>
 					<h3>texture<wbr>Cache<wbr>Ids</h3>
 					<div class="tsd-signature tsd-kind-icon">texture<wbr>Cache<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#texturecacheids">textureCacheIds</a></p>
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#texturecacheids">textureCacheIds</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3623</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1530">definitions/lunalite-pixi-mv.d.ts:1530</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The ids under which this Texture has been added to the texture cache. This is
-								automatically set as long as Texture.addToCache is used, but may not be set if a
-							Texture is added directly to the TextureCache array.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{string[]} PIXI.Texture#textureCacheIds</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="transform" class="tsd-anchor"></a>
+					<h3>transform</h3>
+					<div class="tsd-signature tsd-kind-icon">transform<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#transform">transform</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1529">definitions/lunalite-pixi-mv.d.ts:1529</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="trim" class="tsd-anchor"></a>
-					<h3>trim</h3>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> trim</h3>
 					<div class="tsd-signature tsd-kind-icon">trim<span class="tsd-signature-symbol">:</span> <a href="pixi.rectangle.html" class="tsd-signature-type">Rectangle</a></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#trim">trim</a></p>
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#trim">trim</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3574</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1523">definitions/lunalite-pixi-mv.d.ts:1523</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>This is the trimmed area of original texture, before it was put in atlas
-							Please call <code>updateUvs()</code> after you change coordinates of <code>trim</code> manually.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{PIXI.Rectangle} PIXI.Texture#trim</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-					<a name="uvmatrix" class="tsd-anchor"></a>
-					<h3>uv<wbr>Matrix</h3>
-					<div class="tsd-signature tsd-kind-icon">uv<wbr>Matrix<span class="tsd-signature-symbol">:</span> <a href="pixi.texturematrix.html" class="tsd-signature-type">TextureMatrix</a></div>
-					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#uvmatrix">uvMatrix</a></p>
-						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3594</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Default TextureMatrix instance for this texture
-							By default that object is not created because its heavy</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{PIXI.TextureMatrix} PIXI.Texture#uvMatrix</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="valid" class="tsd-anchor"></a>
@@ -594,40 +358,20 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 					<aside class="tsd-sources">
 						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#valid">valid</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3491</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1511">definitions/lunalite-pixi-mv.d.ts:1511</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>This will let the renderer know if the texture is valid. If it&#39;s not then it cannot be rendered.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{boolean} PIXI.RenderTexture#valid</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="width" class="tsd-anchor"></a>
 					<h3>width</h3>
 					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#width">width</a></p>
+						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#width">width</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:3686</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1556">definitions/lunalite-pixi-mv.d.ts:1556</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The width of the Texture in pixels.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>member</dt>
-							<dd><p>{number}</p>
-							</dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 					<a name="empty" class="tsd-anchor"></a>
@@ -636,23 +380,43 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#empty">EMPTY</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:6121</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1559">definitions/lunalite-pixi-mv.d.ts:1559</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>An empty texture, used often to not have to create multiple empty textures.
-							Can not be destroyed.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>static</dt>
-							<dd></dd>
-							<dt>constant</dt>
-							<dd></dd>
-							<dt>member</dt>
-							<dd><p>{PIXI.Texture}</p>
-							</dd>
-						</dl>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="eventemitter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Event<wbr>Emitter</h3>
+					<div class="tsd-signature tsd-kind-icon">Event<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>constructor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>prefixed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#eventemitter">EventEmitter</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2810">definitions/lunalite-pixi-mv.d.ts:2810</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>constructor<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">new __type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.utils.eventemitter.html" class="tsd-signature-type">EventEmitter</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2810">definitions/lunalite-pixi-mv.d.ts:2810</a></li>
+											</ul>
+										</aside>
+										<h4 class="tsd-returns-title">Returns <a href="pixi.utils.eventemitter.html" class="tsd-signature-type">EventEmitter</a></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>prefixed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></h5>
+							</li>
+						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
@@ -662,71 +426,123 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#white">WHITE</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:6130</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1560">definitions/lunalite-pixi-mv.d.ts:1560</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A white texture of 16x16 size, used for graphics and other things
-							Can not be destroyed.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>static</dt>
-							<dd></dd>
-							<dt>constant</dt>
-							<dd></dd>
-							<dt>member</dt>
-							<dd><p>{PIXI.Texture}</p>
-							</dd>
-						</dl>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="prefixed-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> prefixed</h3>
+					<div class="tsd-signature tsd-kind-icon">prefixed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#prefixed-1">prefixed</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2809">definitions/lunalite-pixi-mv.d.ts:2809</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_updateuvs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _update<wbr>Uvs</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">_update<wbr>Uvs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#_updateuvs">_updateUvs</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1537">definitions/lunalite-pixi-mv.d.ts:1537</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="addlistener" class="tsd-anchor"></a>
+					<h3>add<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Listener<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"update"</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#addlistener">addListener</a></p>
+								<p>Overrides <a href="pixi.systemrenderer.html">SystemRenderer</a>.<a href="pixi.systemrenderer.html#addlistener">addListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1567">definitions/lunalite-pixi-mv.d.ts:1567</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">"update"</span></h5>
+								</li>
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>texture: <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> context: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="clone" class="tsd-anchor"></a>
 					<h3>clone</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#clone">clone</a></p>
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#clone">clone</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:3651</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1536">definitions/lunalite-pixi-mv.d.ts:1536</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new texture object that acts the same as this one.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h4>
-							<p>The new texture</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="destroy" class="tsd-anchor"></a>
 					<h3>destroy</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">destroy<span class="tsd-signature-symbol">(</span>destroyBase<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#destroy">destroy</a></p>
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#destroy">destroy</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:3645</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1535">definitions/lunalite-pixi-mv.d.ts:1535</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Destroys this texture</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -737,35 +553,397 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
-					<a name="onbasetextureupdated" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Base<wbr>Texture<wbr>Updated</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Base<wbr>Texture<wbr>Updated<span class="tsd-signature-symbol">(</span>baseTexture<span class="tsd-signature-symbol">: </span><a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="emit" class="tsd-anchor"></a>
+					<h3>emit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">emit<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#onbasetextureupdated">onBaseTextureUpdated</a></p>
+								<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#emit">emit</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:3639</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2852">definitions/lunalite-pixi-mv.d.ts:2852</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Called when the base texture is updated</p>
+									<p>Calls each of the listeners registered for a given event.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>baseTexture: <a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a></h5>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The base texture.</p>
+										<p>The event name.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Arguments that are passed to registered listeners</p>
 									</div>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p><code>true</code> if the event had listeners, else <code>false</code>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="eventnames" class="tsd-anchor"></a>
+					<h3>event<wbr>Names</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">event<wbr>Names<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/regexpmatcharray.html#array" class="tsd-signature-type">Array</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#eventnames">eventNames</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2827">definitions/lunalite-pixi-mv.d.ts:2827</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return an array listing the events for which the emitter has registered listeners.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/regexpmatcharray.html#array" class="tsd-signature-type">Array</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="listeners" class="tsd-anchor"></a>
+					<h3>listeners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">listeners<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/function.html" class="tsd-signature-type">Function</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">listeners<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, exists<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#listeners">listeners</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2835">definitions/lunalite-pixi-mv.d.ts:2835</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return the listeners registered for a given event.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The event name.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/function.html" class="tsd-signature-type">Function</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#listeners">listeners</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2844">definitions/lunalite-pixi-mv.d.ts:2844</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if there listeners for a given event.
+									If <code>exists</code> argument is not <code>true</code> lists listeners.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The event name.</p>
+									</div>
+								</li>
+								<li>
+									<h5>exists: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Only check if there are listeners.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="off" class="tsd-anchor"></a>
+					<h3>off</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">off<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"update"</span>, fn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#off">off</a></p>
+								<p>Overrides <a href="pixi.systemrenderer.html">SystemRenderer</a>.<a href="pixi.systemrenderer.html#off">off</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1566">definitions/lunalite-pixi-mv.d.ts:1566</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">"update"</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fn: <span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>texture: <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> context: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="on" class="tsd-anchor"></a>
+					<h3>on</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"update"</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#on">on</a></p>
+								<p>Overrides <a href="pixi.systemrenderer.html">SystemRenderer</a>.<a href="pixi.systemrenderer.html#on">on</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1562">definitions/lunalite-pixi-mv.d.ts:1562</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">"update"</span></h5>
+								</li>
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>texture: <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> context: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onbasetextureloaded" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Base<wbr>Texture<wbr>Loaded</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Base<wbr>Texture<wbr>Loaded<span class="tsd-signature-symbol">(</span>baseTexture<span class="tsd-signature-symbol">: </span><a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#onbasetextureloaded">onBaseTextureLoaded</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1533">definitions/lunalite-pixi-mv.d.ts:1533</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>baseTexture: <a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onbasetextureupdated" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Base<wbr>Texture<wbr>Updated</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Base<wbr>Texture<wbr>Updated<span class="tsd-signature-symbol">(</span>baseTexture<span class="tsd-signature-symbol">: </span><a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#onbasetextureupdated">onBaseTextureUpdated</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1534">definitions/lunalite-pixi-mv.d.ts:1534</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>baseTexture: <a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="once" class="tsd-anchor"></a>
+					<h3>once</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">once<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"update"</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#once">once</a></p>
+								<p>Overrides <a href="pixi.systemrenderer.html">SystemRenderer</a>.<a href="pixi.systemrenderer.html#once">once</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1563">definitions/lunalite-pixi-mv.d.ts:1563</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">"update"</span></h5>
+								</li>
+								<li>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>texture: <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> context: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="removealllisteners" class="tsd-anchor"></a>
+					<h3>remove<wbr>All<wbr>Listeners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>All<wbr>Listeners<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"update"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#removealllisteners">removeAllListeners</a></p>
+								<p>Overrides <a href="pixi.systemrenderer.html">SystemRenderer</a>.<a href="pixi.systemrenderer.html#removealllisteners">removeAllListeners</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1565">definitions/lunalite-pixi-mv.d.ts:1565</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">"update"</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="removelistener" class="tsd-anchor"></a>
+					<h3>remove<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Listener<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"update"</span>, fn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#removelistener">removeListener</a></p>
+								<p>Overrides <a href="pixi.systemrenderer.html">SystemRenderer</a>.<a href="pixi.systemrenderer.html#removelistener">removeListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1564">definitions/lunalite-pixi-mv.d.ts:1564</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">"update"</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fn: <span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>texture: <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> context: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -773,118 +951,99 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 					<a name="resize" class="tsd-anchor"></a>
 					<h3>resize</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">resize<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, resizeBaseTexture<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">resize<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, doNotResizeBaseTexture<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:3513</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1513">definitions/lunalite-pixi-mv.d.ts:1513</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Resizes the RenderTexture.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>width: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The width to resize to.</p>
-									</div>
 								</li>
 								<li>
 									<h5>height: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The height to resize to.</p>
-									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> resizeBaseTexture: <span class="tsd-signature-type">boolean</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> doNotResizeBaseTexture: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="setresolution" class="tsd-anchor"></a>
-					<h3>set<wbr>Resolution</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Resolution<span class="tsd-signature-symbol">(</span>resolution<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setmaxlisteners" class="tsd-anchor"></a>
+					<h3>set<wbr>Max<wbr>Listeners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Max<wbr>Listeners<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="screensprite.html">ScreenSprite</a>.<a href="screensprite.html#setmaxlisteners">setMaxListeners</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:3519</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L2905">definitions/lunalite-pixi-mv.d.ts:2905</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Changes the resolution of baseTexture, but does not change framebuffer size.</p>
+									<p>This function doesn&#39;t apply anymore.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd></dd>
+								</dl>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>resolution: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The new resolution to apply to RenderTexture</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#update">update</a></p>
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#update">update</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:3632</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1532">definitions/lunalite-pixi-mv.d.ts:1532</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Updates this texture on the gpu.</p>
-								</div>
-								<p>Calls the TextureResource update.</p>
-								<p>If you adjusted <code>frame</code> manually, please call <code>updateUvs()</code> instead.</p>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<a name="updateuvs" class="tsd-anchor"></a>
-					<h3>update<wbr>Uvs</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Uvs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="addtexturetocache" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> add<wbr>Texture<wbr>ToCache</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Texture<wbr>ToCache<span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="pixi.texture.html">Texture</a>.<a href="pixi.texture.html#updateuvs">updateUvs</a></p>
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#addtexturetocache">addTextureToCache</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:3656</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1550">definitions/lunalite-pixi-mv.d.ts:1550</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Updates the internal WebGL UV cache. Use it after you change <code>frame</code> or <code>trim</code> of the texture.
-									Call it after changing the frame</p>
-								</div>
-							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>texture: <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h5>
+								</li>
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -900,31 +1059,16 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#addtocache">addToCache</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:6068</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1546">definitions/lunalite-pixi-mv.d.ts:1546</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Adds a Texture to the global TextureCache. This cache is shared across the whole PIXI object.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>static</dt>
-									<dd></dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>texture: <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The Texture to add to the cache.</p>
-									</div>
 								</li>
 								<li>
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The id that the Texture will be stored against.</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -935,42 +1079,31 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 					<a name="create" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> create</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>height<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>resolution<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>scaleMode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>width<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.rendertexture.html" class="tsd-signature-type">RenderTexture</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, scaleMode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, resolution<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.rendertexture.html" class="tsd-signature-type">RenderTexture</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:3530</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1515">definitions/lunalite-pixi-mv.d.ts:1515</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>A short hand way of creating a render texture.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-symbol">{ </span>height<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>resolution<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>scaleMode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>width<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> height<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> resolution<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> scale<wbr>Mode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> width<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-									</ul>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> width: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> height: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scaleMode: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> resolution: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="pixi.rendertexture.html" class="tsd-signature-type">RenderTexture</a></h4>
-							<p>The new render texture</p>
 						</li>
 					</ul>
 				</section>
@@ -978,97 +1111,110 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 					<a name="from" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> from</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/htmlimageelement.html" class="tsd-signature-type">HTMLImageElement</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/htmlcanvaselement.html" class="tsd-signature-type">HTMLCanvasElement</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/htmlvideoelement.html" class="tsd-signature-type">HTMLVideoElement</a><span class="tsd-signature-symbol"> | </span><a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, strict<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></li>
+						<li class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/htmlimageelement.html" class="tsd-signature-type">HTMLImageElement</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/htmlcanvaselement.html" class="tsd-signature-type">HTMLCanvasElement</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/htmlvideoelement.html" class="tsd-signature-type">HTMLVideoElement</a><span class="tsd-signature-symbol"> | </span><a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#from">from</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:6037</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1544">definitions/lunalite-pixi-mv.d.ts:1544</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Helper function that creates a new Texture based on the source you provide.
-									The source can be - frame id, image url, video url, canvas element, video element, base texture</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>static</dt>
-									<dd></dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>source: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/htmlimageelement.html" class="tsd-signature-type">HTMLImageElement</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/htmlcanvaselement.html" class="tsd-signature-type">HTMLCanvasElement</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/htmlvideoelement.html" class="tsd-signature-type">HTMLVideoElement</a><span class="tsd-signature-symbol"> | </span><a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<pre><code>   Source <span class="hljs-built_in">to</span> <span class="hljs-built_in">create</span> texture <span class="hljs-built_in">from</span></code></pre>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> strict: <span class="tsd-signature-type">boolean</span></h5>
+									<h5>source: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/htmlimageelement.html" class="tsd-signature-type">HTMLImageElement</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/htmlcanvaselement.html" class="tsd-signature-type">HTMLCanvasElement</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/htmlvideoelement.html" class="tsd-signature-type">HTMLVideoElement</a><span class="tsd-signature-symbol"> | </span><a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h4>
-							<p>The newly created texture</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="frombuffer" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> from<wbr>Buffer</h3>
+					<a name="fromcanvas" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> from<wbr>Canvas</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Buffer<span class="tsd-signature-symbol">(</span>buffer<span class="tsd-signature-symbol">: </span><a href="../interfaces/float32array.html" class="tsd-signature-type">Float32Array</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/uint8array.html" class="tsd-signature-type">Uint8Array</a>, width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></li>
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Canvas<span class="tsd-signature-symbol">(</span>canvas<span class="tsd-signature-symbol">: </span><a href="../interfaces/htmlcanvaselement.html" class="tsd-signature-type">HTMLCanvasElement</a>, scaleMode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, origin<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#frombuffer">fromBuffer</a></p>
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#fromcanvas">fromCanvas</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:6049</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1541">definitions/lunalite-pixi-mv.d.ts:1541</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Create a new Texture with a BufferResource from a Float32Array.
-									RGBA values are floats from 0 to 1.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>static</dt>
-									<dd></dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>buffer: <a href="../interfaces/float32array.html" class="tsd-signature-type">Float32Array</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/uint8array.html" class="tsd-signature-type">Uint8Array</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The optional array to use, if no data
-										is provided, a new Float32Array is created.</p>
-									</div>
+									<h5>canvas: <a href="../interfaces/htmlcanvaselement.html" class="tsd-signature-type">HTMLCanvasElement</a></h5>
 								</li>
 								<li>
-									<h5>width: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Width of the resource</p>
-									</div>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scaleMode: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>height: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Height of the resource</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">any</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> origin: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h4>
-							<p>The resulting new BaseTexture</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="fromframe" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> from<wbr>Frame</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Frame<span class="tsd-signature-symbol">(</span>frameId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#fromframe">fromFrame</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1540">definitions/lunalite-pixi-mv.d.ts:1540</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>frameId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="fromimage" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> from<wbr>Image</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Image<span class="tsd-signature-symbol">(</span>imageUrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, crossOrigin<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, scaleMode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, sourceScale<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#fromimage">fromImage</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1539">definitions/lunalite-pixi-mv.d.ts:1539</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>imageUrl: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> crossOrigin: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scaleMode: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sourceScale: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -1083,38 +1229,76 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#fromloader">fromLoader</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:6060</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1545">definitions/lunalite-pixi-mv.d.ts:1545</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Create a texture from a source and add to the cache.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>static</dt>
-									<dd></dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>source: <a href="../interfaces/htmlimageelement.html" class="tsd-signature-type">HTMLImageElement</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/htmlcanvaselement.html" class="tsd-signature-type">HTMLCanvasElement</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The input source.</p>
-									</div>
 								</li>
 								<li>
 									<h5>imageUrl: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>File name of texture, for cache and resolving resolution.</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> name: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h4>
-							<p>Output texture</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="fromvideo" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> from<wbr>Video</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Video<span class="tsd-signature-symbol">(</span>video<span class="tsd-signature-symbol">: </span><a href="../interfaces/htmlvideoelement.html" class="tsd-signature-type">HTMLVideoElement</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, scaleMode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#fromvideo">fromVideo</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1542">definitions/lunalite-pixi-mv.d.ts:1542</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>video: <a href="../interfaces/htmlvideoelement.html" class="tsd-signature-type">HTMLVideoElement</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scaleMode: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="fromvideourl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> from<wbr>Video<wbr>Url</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Video<wbr>Url<span class="tsd-signature-symbol">(</span>videoUrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, scaleMode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#fromvideourl">fromVideoUrl</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1543">definitions/lunalite-pixi-mv.d.ts:1543</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>videoUrl: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scaleMode: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -1122,36 +1306,47 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 					<a name="removefromcache" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> remove<wbr>From<wbr>Cache</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>From<wbr>Cache<span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>From<wbr>Cache<span class="tsd-signature-symbol">(</span>texture<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#removefromcache">removeFromCache</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:6076</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1547">definitions/lunalite-pixi-mv.d.ts:1547</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Remove a Texture from the global TextureCache.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>static</dt>
-									<dd></dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>texture: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>id of a Texture to be removed, or a Texture instance itself</p>
-									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="pixi.texture.html" class="tsd-signature-type">Texture</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
-							<p>The Texture that was removed</p>
+							<h4 class="tsd-returns-title">Returns <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="removetexturefromcache" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> remove<wbr>Texture<wbr>From<wbr>Cache</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Texture<wbr>From<wbr>Cache<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="pixi.rendertexture.html">RenderTexture</a>.<a href="pixi.rendertexture.html#removetexturefromcache">removeTextureFromCache</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L1551">definitions/lunalite-pixi-mv.d.ts:1551</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -1163,64 +1358,61 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="label tsd-is-external">
-						<span>Internals</span>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_pixi_js_.html">&quot;pixi.js&quot;</a>
-					</li>
 					<li class="current tsd-kind-namespace">
 						<a href="../modules/pixi.html">PIXI</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.const.html">CONST</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.canvastinter.html">Canvas<wbr>Tinter</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.groupd8.html">Group<wbr>D8</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.accessibility.html">accessibility</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.core.html">core</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.extract.html">extract</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.extras.html">extras</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.filters.html">filters</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.graphicsutils.html">graphics<wbr>Utils</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.groupd8.html">group<wbr>D8</a>
+								<a href="../modules/pixi.glcore.html">gl<wbr>Core</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.interaction.html">interaction</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.resources.html">resources</a>
+								<a href="../modules/pixi.loaders.html">loaders</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.mesh.html">mesh</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.particles.html">particles</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.prepare.html">prepare</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.settings.html">settings</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.systems.html">systems</a>
+								<a href="../modules/pixi.ticker.html">ticker</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.utils.html">utils</a>
 							</li>
 						</ul>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="../modules/haxe.html">haxe</a>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="../modules/pixi.html">pixi</a>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="../modules/rm.html">rm</a>
-					</li>
-					<li class="label tsd-is-external">
-						<span>Externals</span>
-					</li>
-					<li class=" tsd-kind-namespace tsd-is-external">
-						<a href="../modules/css.html">CSS</a>
-					</li>
-					<li class=" tsd-kind-namespace tsd-is-external">
-						<a href="../modules/intl.html">Intl</a>
-					</li>
-					<li class=" tsd-kind-namespace tsd-is-external">
-						<a href="../modules/webassembly.html">Web<wbr>Assembly</a>
 					</li>
 				</ul>
 			</nav>
@@ -1234,89 +1426,122 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="pixi.rendertexture.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="pixi.rendertexture.html#_frame" class="tsd-kind-icon">_frame</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="pixi.rendertexture.html#_rotate" class="tsd-kind-icon">_rotate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="pixi.rendertexture.html#_updateid" class="tsd-kind-icon">_updateID</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="pixi.rendertexture.html#_uvs" class="tsd-kind-icon">_uvs</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.rendertexture.html#basetexture" class="tsd-kind-icon">base<wbr>Texture</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="pixi.rendertexture.html#defaultanchor" class="tsd-kind-icon">default<wbr>Anchor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="pixi.rendertexture.html#filterframe" class="tsd-kind-icon">filter<wbr>Frame</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="pixi.rendertexture.html#filterpoolkey" class="tsd-kind-icon">filter<wbr>Pool<wbr>Key</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.rendertexture.html#frame" class="tsd-kind-icon">frame</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.rendertexture.html#height" class="tsd-kind-icon">height</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="pixi.rendertexture.html#legacyrenderer" class="tsd-kind-icon">legacy<wbr>Renderer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.rendertexture.html#noframe" class="tsd-kind-icon">no<wbr>Frame</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.rendertexture.html#orig" class="tsd-kind-icon">orig</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.rendertexture.html#requiresupdate" class="tsd-kind-icon">requires<wbr>Update</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="pixi.rendertexture.html#resolution" class="tsd-kind-icon">resolution</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.rendertexture.html#rotate" class="tsd-kind-icon">rotate</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.rendertexture.html#texturecacheids" class="tsd-kind-icon">texture<wbr>Cache<wbr>Ids</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="pixi.rendertexture.html#trim" class="tsd-kind-icon">trim</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="pixi.rendertexture.html#transform" class="tsd-kind-icon">transform</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="pixi.rendertexture.html#uvmatrix" class="tsd-kind-icon">uv<wbr>Matrix</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="pixi.rendertexture.html#trim" class="tsd-kind-icon">trim</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 								<a href="pixi.rendertexture.html#valid" class="tsd-kind-icon">valid</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.rendertexture.html#width" class="tsd-kind-icon">width</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="pixi.rendertexture.html#empty" class="tsd-kind-icon">EMPTY</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="pixi.rendertexture.html#eventemitter" class="tsd-kind-icon">Event<wbr>Emitter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="pixi.rendertexture.html#white" class="tsd-kind-icon">WHITE</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="pixi.rendertexture.html#prefixed-1" class="tsd-kind-icon">prefixed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="pixi.rendertexture.html#_updateuvs" class="tsd-kind-icon">_update<wbr>Uvs</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="pixi.rendertexture.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.rendertexture.html#clone" class="tsd-kind-icon">clone</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.rendertexture.html#destroy" class="tsd-kind-icon">destroy</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="pixi.rendertexture.html#emit" class="tsd-kind-icon">emit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="pixi.rendertexture.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="pixi.rendertexture.html#listeners" class="tsd-kind-icon">listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="pixi.rendertexture.html#off" class="tsd-kind-icon">off</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="pixi.rendertexture.html#on" class="tsd-kind-icon">on</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="pixi.rendertexture.html#onbasetextureloaded" class="tsd-kind-icon">on<wbr>Base<wbr>Texture<wbr>Loaded</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="pixi.rendertexture.html#onbasetextureupdated" class="tsd-kind-icon">on<wbr>Base<wbr>Texture<wbr>Updated</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="pixi.rendertexture.html#once" class="tsd-kind-icon">once</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="pixi.rendertexture.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="pixi.rendertexture.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="pixi.rendertexture.html#resize" class="tsd-kind-icon">resize</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="pixi.rendertexture.html#setresolution" class="tsd-kind-icon">set<wbr>Resolution</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="pixi.rendertexture.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="pixi.rendertexture.html#update" class="tsd-kind-icon">update</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="pixi.rendertexture.html#updateuvs" class="tsd-kind-icon">update<wbr>Uvs</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="pixi.rendertexture.html#addtexturetocache" class="tsd-kind-icon">add<wbr>Texture<wbr>ToCache</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="pixi.rendertexture.html#addtocache" class="tsd-kind-icon">add<wbr>ToCache</a>
@@ -1328,13 +1553,28 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 								<a href="pixi.rendertexture.html#from" class="tsd-kind-icon">from</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="pixi.rendertexture.html#frombuffer" class="tsd-kind-icon">from<wbr>Buffer</a>
+								<a href="pixi.rendertexture.html#fromcanvas" class="tsd-kind-icon">from<wbr>Canvas</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="pixi.rendertexture.html#fromframe" class="tsd-kind-icon">from<wbr>Frame</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="pixi.rendertexture.html#fromimage" class="tsd-kind-icon">from<wbr>Image</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="pixi.rendertexture.html#fromloader" class="tsd-kind-icon">from<wbr>Loader</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="pixi.rendertexture.html#fromvideo" class="tsd-kind-icon">from<wbr>Video</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="pixi.rendertexture.html#fromvideourl" class="tsd-kind-icon">from<wbr>Video<wbr>Url</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="pixi.rendertexture.html#removefromcache" class="tsd-kind-icon">remove<wbr>From<wbr>Cache</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="pixi.rendertexture.html#removetexturefromcache" class="tsd-kind-icon">remove<wbr>Texture<wbr>From<wbr>Cache</a>
 							</li>
 						</ul>
 					</li>
@@ -1359,15 +1599,18 @@ renderer.render(sprite, renderTexture);  <span class="hljs-comment">// Renders t
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
 			</ul>
 		</div>
 	</div>

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Game_Party | Lunalite-MZ</title>
-	<meta name="description" content="Documentation for Lunalite-MZ">
+	<title>Game_Party | LunaLite-MV</title>
+	<meta name="description" content="Documentation for LunaLite-MV">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">Lunalite-MZ</a>
+					<a href="../index.html" class="title">LunaLite-MV</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -100,7 +100,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="game_party.html#_actors" class="tsd-kind-icon">_actors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="game_party.html#_armors" class="tsd-kind-icon">_armors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="game_party.html#_gold" class="tsd-kind-icon">_gold</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="game_party.html#_inbattle" class="tsd-kind-icon">_in<wbr>Battle</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="game_party.html#_items" class="tsd-kind-icon">_items</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="game_party.html#_lastitem" class="tsd-kind-icon">_last<wbr>Item</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="game_party.html#_menuactorid" class="tsd-kind-icon">_menu<wbr>Actor<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="game_party.html#_steps" class="tsd-kind-icon">_steps</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="game_party.html#_targetactorid" class="tsd-kind-icon">_target<wbr>Actor<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="game_party.html#_weapons" class="tsd-kind-icon">_weapons</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_party.html#ability_cancel_surprise" class="tsd-kind-icon">ABILITY_<wbr>CANCEL_<wbr>SURPRISE</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_party.html#ability_drop_item_double" class="tsd-kind-icon">ABILITY_<wbr>DROP_<wbr>ITEM_<wbr>DOUBLE</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="game_party.html#ability_encounter_half" class="tsd-kind-icon">ABILITY_<wbr>ENCOUNTER_<wbr>HALF</a></li>
@@ -214,7 +223,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34351</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14706">definitions/lunalite-pixi-mv.d.ts:14706</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="game_party.html" class="tsd-signature-type">Game_Party</a></h4>
@@ -224,6 +233,50 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_actors" class="tsd-anchor"></a>
+					<h3>_actors</h3>
+					<div class="tsd-signature tsd-kind-icon">_actors<span class="tsd-signature-symbol">:</span> <a href="game_actor.html" class="tsd-signature-type">Game_Actor</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14713">definitions/lunalite-pixi-mv.d.ts:14713</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_armors" class="tsd-anchor"></a>
+					<h3>_armors</h3>
+					<div class="tsd-signature tsd-kind-icon">_armors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14728">definitions/lunalite-pixi-mv.d.ts:14728</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Data structure.
+							[armorId:Int] : Int</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_gold" class="tsd-anchor"></a>
+					<h3>_gold</h3>
+					<div class="tsd-signature tsd-kind-icon">_gold<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14708">definitions/lunalite-pixi-mv.d.ts:14708</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_inbattle" class="tsd-anchor"></a>
 					<h3>_in<wbr>Battle</h3>
@@ -231,9 +284,97 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#_inbattle">_inBattle</a></p>
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:34136</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14594">definitions/lunalite-pixi-mv.d.ts:14594</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_items" class="tsd-anchor"></a>
+					<h3>_items</h3>
+					<div class="tsd-signature tsd-kind-icon">_items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14718">definitions/lunalite-pixi-mv.d.ts:14718</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Data structure.
+							[ItemId:Int] : Int</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_lastitem" class="tsd-anchor"></a>
+					<h3>_last<wbr>Item</h3>
+					<div class="tsd-signature tsd-kind-icon">_last<wbr>Item<span class="tsd-signature-symbol">:</span> <a href="game_item.html" class="tsd-signature-type">Game_Item</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14710">definitions/lunalite-pixi-mv.d.ts:14710</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_menuactorid" class="tsd-anchor"></a>
+					<h3>_menu<wbr>Actor<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">_menu<wbr>Actor<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14711">definitions/lunalite-pixi-mv.d.ts:14711</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_steps" class="tsd-anchor"></a>
+					<h3>_steps</h3>
+					<div class="tsd-signature tsd-kind-icon">_steps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14709">definitions/lunalite-pixi-mv.d.ts:14709</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_targetactorid" class="tsd-anchor"></a>
+					<h3>_target<wbr>Actor<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">_target<wbr>Actor<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14712">definitions/lunalite-pixi-mv.d.ts:14712</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_weapons" class="tsd-anchor"></a>
+					<h3>_weapons</h3>
+					<div class="tsd-signature tsd-kind-icon">_weapons<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14723">definitions/lunalite-pixi-mv.d.ts:14723</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Data structure.
+							[weaponId:Int] : Int</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="ability_cancel_surprise" class="tsd-anchor"></a>
@@ -241,7 +382,7 @@
 					<div class="tsd-signature tsd-kind-icon">ABILITY_<wbr>CANCEL_<wbr>SURPRISE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:34705</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15081">definitions/lunalite-pixi-mv.d.ts:15081</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +392,7 @@
 					<div class="tsd-signature tsd-kind-icon">ABILITY_<wbr>DROP_<wbr>ITEM_<wbr>DOUBLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:34708</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15084">definitions/lunalite-pixi-mv.d.ts:15084</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -261,7 +402,7 @@
 					<div class="tsd-signature tsd-kind-icon">ABILITY_<wbr>ENCOUNTER_<wbr>HALF<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:34703</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15079">definitions/lunalite-pixi-mv.d.ts:15079</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -271,7 +412,7 @@
 					<div class="tsd-signature tsd-kind-icon">ABILITY_<wbr>ENCOUNTER_<wbr>NONE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:34704</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15080">definitions/lunalite-pixi-mv.d.ts:15080</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -281,7 +422,7 @@
 					<div class="tsd-signature tsd-kind-icon">ABILITY_<wbr>GOLD_<wbr>DOUBLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:34707</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15083">definitions/lunalite-pixi-mv.d.ts:15083</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -291,7 +432,7 @@
 					<div class="tsd-signature tsd-kind-icon">ABILITY_<wbr>RAISE_<wbr>PREEMPTIVE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in definitions/lunalite-pixi-mz.d.ts:34706</li>
+							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15082">definitions/lunalite-pixi-mv.d.ts:15082</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -308,7 +449,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34503</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14879">definitions/lunalite-pixi-mv.d.ts:14879</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -342,7 +483,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#agility">agility</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34185</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14643">definitions/lunalite-pixi-mv.d.ts:14643</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -370,7 +511,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#alivemembers">aliveMembers</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34366</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14742">definitions/lunalite-pixi-mv.d.ts:14742</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -397,7 +538,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34463</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14839">definitions/lunalite-pixi-mv.d.ts:14839</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -425,7 +566,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34449</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14825">definitions/lunalite-pixi-mv.d.ts:14825</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -452,7 +593,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34387</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14763">definitions/lunalite-pixi-mv.d.ts:14763</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -479,7 +620,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34604</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14980">definitions/lunalite-pixi-mv.d.ts:14980</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -496,7 +637,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34603</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14979">definitions/lunalite-pixi-mv.d.ts:14979</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -529,7 +670,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34638</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15014">definitions/lunalite-pixi-mv.d.ts:15014</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -557,7 +698,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#clearactions">clearActions</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34178</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14636">definitions/lunalite-pixi-mv.d.ts:14636</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -585,7 +726,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#clearresults">clearResults</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34208</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14666">definitions/lunalite-pixi-mv.d.ts:14666</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -612,7 +753,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34595</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14971">definitions/lunalite-pixi-mv.d.ts:14971</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -646,7 +787,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#deadmembers">deadMembers</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34373</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14749">definitions/lunalite-pixi-mv.d.ts:14749</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -673,7 +814,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34587</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14963">definitions/lunalite-pixi-mv.d.ts:14963</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -699,7 +840,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34456</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14832">definitions/lunalite-pixi-mv.d.ts:14832</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -726,7 +867,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34400</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14776">definitions/lunalite-pixi-mv.d.ts:14776</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -753,7 +894,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34645</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15021">definitions/lunalite-pixi-mv.d.ts:15021</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -780,7 +921,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34524</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14900">definitions/lunalite-pixi-mv.d.ts:14900</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -813,7 +954,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34586</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14962">definitions/lunalite-pixi-mv.d.ts:14962</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -842,7 +983,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34517</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14893">definitions/lunalite-pixi-mv.d.ts:14893</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -869,7 +1010,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34661</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15037">definitions/lunalite-pixi-mv.d.ts:15037</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -886,7 +1027,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34676</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15052">definitions/lunalite-pixi-mv.d.ts:15052</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -903,7 +1044,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34653</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15029">definitions/lunalite-pixi-mv.d.ts:15029</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -930,7 +1071,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34660</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15036">definitions/lunalite-pixi-mv.d.ts:15036</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -957,7 +1098,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34675</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15051">definitions/lunalite-pixi-mv.d.ts:15051</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -984,7 +1125,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34577</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14953">definitions/lunalite-pixi-mv.d.ts:14953</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1021,7 +1162,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34568</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14944">definitions/lunalite-pixi-mv.d.ts:14944</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1044,7 +1185,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34668</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15044">definitions/lunalite-pixi-mv.d.ts:15044</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1071,7 +1212,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34496</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14872">definitions/lunalite-pixi-mv.d.ts:14872</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1099,7 +1240,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#inbattle">inBattle</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34144</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14602">definitions/lunalite-pixi-mv.d.ts:14602</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1126,7 +1267,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34551</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14927">definitions/lunalite-pixi-mv.d.ts:14927</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1153,7 +1294,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34393</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14769">definitions/lunalite-pixi-mv.d.ts:14769</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1181,7 +1322,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#initialize">initialize</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34137</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14595">definitions/lunalite-pixi-mv.d.ts:14595</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1199,7 +1340,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#isalldead">isAllDead</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34240</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14698">definitions/lunalite-pixi-mv.d.ts:14698</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1226,7 +1367,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34585</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14961">definitions/lunalite-pixi-mv.d.ts:14961</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1259,7 +1400,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34414</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14790">definitions/lunalite-pixi-mv.d.ts:14790</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1286,7 +1427,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34464</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14840">definitions/lunalite-pixi-mv.d.ts:14840</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1314,7 +1455,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34435</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14811">definitions/lunalite-pixi-mv.d.ts:14811</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/rm.types.html#item" class="tsd-signature-type">Item</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -1331,7 +1472,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34629</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15005">definitions/lunalite-pixi-mv.d.ts:15005</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1358,7 +1499,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34428</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14804">definitions/lunalite-pixi-mv.d.ts:14804</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1385,7 +1526,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34531</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14907">definitions/lunalite-pixi-mv.d.ts:14907</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1418,7 +1559,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34588</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14964">definitions/lunalite-pixi-mv.d.ts:14964</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1448,7 +1589,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#makeactions">makeActions</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34226</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14684">definitions/lunalite-pixi-mv.d.ts:14684</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1475,7 +1616,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34619</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14995">definitions/lunalite-pixi-mv.d.ts:14995</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1492,7 +1633,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34620</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14996">definitions/lunalite-pixi-mv.d.ts:14996</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1509,7 +1650,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34421</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14797">definitions/lunalite-pixi-mv.d.ts:14797</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1536,7 +1677,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34538</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14914">definitions/lunalite-pixi-mv.d.ts:14914</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1563,7 +1704,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34567</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14943">definitions/lunalite-pixi-mv.d.ts:14943</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1597,7 +1738,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#members">members</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34359</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14735">definitions/lunalite-pixi-mv.d.ts:14735</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1624,7 +1765,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34617</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14993">definitions/lunalite-pixi-mv.d.ts:14993</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1653,7 +1794,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#movablemembers">movableMembers</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34380</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14756">definitions/lunalite-pixi-mv.d.ts:14756</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1680,7 +1821,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34471</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14847">definitions/lunalite-pixi-mv.d.ts:14847</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -1697,7 +1838,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34559</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14935">definitions/lunalite-pixi-mv.d.ts:14935</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1732,7 +1873,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#onbattleend">onBattleEnd</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34220</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14678">definitions/lunalite-pixi-mv.d.ts:14678</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1760,7 +1901,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#onbattlestart">onBattleStart</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34214</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14672">definitions/lunalite-pixi-mv.d.ts:14672</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1787,7 +1928,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34610</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14986">definitions/lunalite-pixi-mv.d.ts:14986</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1814,7 +1955,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34646</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15022">definitions/lunalite-pixi-mv.d.ts:15022</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1837,7 +1978,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34690</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15066">definitions/lunalite-pixi-mv.d.ts:15066</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1864,7 +2005,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34684</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15060">definitions/lunalite-pixi-mv.d.ts:15060</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1892,7 +2033,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#randomdeadtarget">randomDeadTarget</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34200</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14658">definitions/lunalite-pixi-mv.d.ts:14658</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1920,7 +2061,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#randomtarget">randomTarget</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34193</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14651">definitions/lunalite-pixi-mv.d.ts:14651</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1947,7 +2088,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34677</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15053">definitions/lunalite-pixi-mv.d.ts:15053</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1970,7 +2111,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34678</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15054">definitions/lunalite-pixi-mv.d.ts:15054</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1993,7 +2134,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34510</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14886">definitions/lunalite-pixi-mv.d.ts:14886</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2026,7 +2167,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34696</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15072">definitions/lunalite-pixi-mv.d.ts:15072</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2053,7 +2194,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34702</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15078">definitions/lunalite-pixi-mv.d.ts:15078</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2080,7 +2221,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34434</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14810">definitions/lunalite-pixi-mv.d.ts:14810</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2108,7 +2249,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#select">select</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34233</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14691">definitions/lunalite-pixi-mv.d.ts:14691</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2141,7 +2282,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34630</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15006">definitions/lunalite-pixi-mv.d.ts:15006</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2164,7 +2305,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34618</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14994">definitions/lunalite-pixi-mv.d.ts:14994</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2187,7 +2328,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34622</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14998">definitions/lunalite-pixi-mv.d.ts:14998</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2210,7 +2351,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34477</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14853">definitions/lunalite-pixi-mv.d.ts:14853</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2237,7 +2378,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34489</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14865">definitions/lunalite-pixi-mv.d.ts:14865</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2264,7 +2405,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34483</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14859">definitions/lunalite-pixi-mv.d.ts:14859</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2291,7 +2432,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34470</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14846">definitions/lunalite-pixi-mv.d.ts:14846</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2318,7 +2459,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34407</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14783">definitions/lunalite-pixi-mv.d.ts:14783</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2346,7 +2487,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#smoothdeadtarget">smoothDeadTarget</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34202</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14660">definitions/lunalite-pixi-mv.d.ts:14660</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2370,7 +2511,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#smoothtarget">smoothTarget</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34201</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14659">definitions/lunalite-pixi-mv.d.ts:14659</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2393,7 +2534,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34545</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14921">definitions/lunalite-pixi-mv.d.ts:14921</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2421,7 +2562,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#substitutebattler">substituteBattler</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34241</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14699">definitions/lunalite-pixi-mv.d.ts:14699</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="game_battler.html" class="tsd-signature-type">Game_Battler</a></h4>
@@ -2438,7 +2579,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34631</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L15007">definitions/lunalite-pixi-mv.d.ts:15007</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2464,7 +2605,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34621</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14997">definitions/lunalite-pixi-mv.d.ts:14997</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="game_actor.html" class="tsd-signature-type">Game_Actor</a></h4>
@@ -2482,7 +2623,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="game_unit.html">Game_Unit</a>.<a href="game_unit.html#tgrsum">tgrSum</a></p>
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34186</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14644">definitions/lunalite-pixi-mv.d.ts:14644</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -2499,7 +2640,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in definitions/lunalite-pixi-mz.d.ts:34442</li>
+									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/14deade/definitions/lunalite-pixi-mv.d.ts#L14818">definitions/lunalite-pixi-mv.d.ts:14818</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2536,8 +2677,35 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 								<a href="game_party.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="game_party.html#_actors" class="tsd-kind-icon">_actors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="game_party.html#_armors" class="tsd-kind-icon">_armors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="game_party.html#_gold" class="tsd-kind-icon">_gold</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="game_party.html#_inbattle" class="tsd-kind-icon">_in<wbr>Battle</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="game_party.html#_items" class="tsd-kind-icon">_items</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="game_party.html#_lastitem" class="tsd-kind-icon">_last<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="game_party.html#_menuactorid" class="tsd-kind-icon">_menu<wbr>Actor<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="game_party.html#_steps" class="tsd-kind-icon">_steps</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="game_party.html#_targetactorid" class="tsd-kind-icon">_target<wbr>Actor<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="game_party.html#_weapons" class="tsd-kind-icon">_weapons</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="game_party.html#ability_cancel_surprise" class="tsd-kind-icon">ABILITY_<wbr>CANCEL_<wbr>SURPRISE</a>
@@ -2832,11 +3000,18 @@
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
 			</ul>
 		</div>
 	</div>
