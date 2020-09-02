@@ -1,3 +1,3 @@
 # LunaLite
-> Documentation for the RPGMakerMV & MZ Platform
+> Documentation for the RPGMakerMV
 

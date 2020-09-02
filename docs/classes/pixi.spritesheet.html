@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Spritesheet | LunaLite-MV</title>
-	<meta name="description" content="Documentation for LunaLite-MV">
+	<title>Spritesheet | Lunalite-MZ</title>
+	<meta name="description" content="Documentation for Lunalite-MZ">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">LunaLite-MV</a>
+					<a href="../index.html" class="title">Lunalite-MZ</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -69,6 +69,31 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Utility class for maintaining reference to a collection
+						of Textures on a single Spritesheet.</p>
+					</div>
+					<p>To access a sprite sheet from your code pass its JSON data file to Pixi&#39;s loader:</p>
+					<pre><code class="language-js">PIXI.Loader.shared.add(<span class="hljs-string">&quot;images/spritesheet.json&quot;</span>).load(setup);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setup</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">let</span> sheet = PIXI.Loader.shared.resources[<span class="hljs-string">&quot;images/spritesheet.json&quot;</span>].spritesheet;
+  ...
+}</code></pre>
+					<p>With the <code>sheet.textures</code> you can create Sprite objects,<code>sheet.animations</code> can be used to create an AnimatedSprite.</p>
+					<p>Sprite sheets can be packed using tools like <a href="https://codeandweb.com/texturepacker" class="external">TexturePacker</a>,
+						<a href="https://renderhjs.net/shoebox/" class="external">Shoebox</a> or <a href="https://github.com/krzysztof-o/spritesheet.js" class="external">Spritesheet.js</a>.
+						Default anchor points (see {@link PIXI.Texture#defaultAnchor}) and grouping of animation sprites are currently only
+					supported by TexturePacker.</p>
+					<dl class="tsd-comment-tags">
+						<dt>memberof</dt>
+						<dd><p>PIXI</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -90,10 +115,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.spritesheet.html#_batchindex" class="tsd-kind-icon">_batch<wbr>Index</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.spritesheet.html#_callback" class="tsd-kind-icon">_callback</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.spritesheet.html#_framekeys" class="tsd-kind-icon">_frame<wbr>Keys</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="pixi.spritesheet.html#_frames" class="tsd-kind-icon">_frames</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.spritesheet.html#animations" class="tsd-kind-icon">animations</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.spritesheet.html#basetexture" class="tsd-kind-icon">base<wbr>Texture</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.spritesheet.html#data" class="tsd-kind-icon">data</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.spritesheet.html#resolution" class="tsd-kind-icon">resolution</a></li>
@@ -104,10 +126,6 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.spritesheet.html#_nextbatch" class="tsd-kind-icon">_next<wbr>Batch</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.spritesheet.html#_parsecomplete" class="tsd-kind-icon">_parse<wbr>Complete</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.spritesheet.html#_processframes" class="tsd-kind-icon">_process<wbr>Frames</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="pixi.spritesheet.html#_updateresolution" class="tsd-kind-icon">_update<wbr>Resolution</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.spritesheet.html#destroy" class="tsd-kind-icon">destroy</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.spritesheet.html#parse" class="tsd-kind-icon">parse</a></li>
 							</ul>
@@ -121,19 +139,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Spritesheet<span class="tsd-signature-symbol">(</span>baseTexture<span class="tsd-signature-symbol">: </span><a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, resolutionFilename<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.spritesheet.html" class="tsd-signature-type">Spritesheet</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Spritesheet<span class="tsd-signature-symbol">(</span>baseTexture<span class="tsd-signature-symbol">: </span><a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a><span class="tsd-signature-symbol"> | </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, resolutionFilename<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.spritesheet.html" class="tsd-signature-type">Spritesheet</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1585">definitions/lunalite-pixi-mv.d.ts:1585</a></li>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:21122</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>baseTexture: <a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a></h5>
+									<h5>baseTexture: <a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a><span class="tsd-signature-symbol"> | </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h5>
 								</li>
 								<li>
 									<h5>data: <span class="tsd-signature-type">any</span></h5>
@@ -149,74 +167,27 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="_batchindex" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _batch<wbr>Index</h3>
-					<div class="tsd-signature tsd-kind-icon">_batch<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="animations" class="tsd-anchor"></a>
+					<h3>animations</h3>
+					<div class="tsd-signature tsd-kind-icon">animations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1595">definitions/lunalite-pixi-mv.d.ts:1595</a></li>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:21153</li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="_callback" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _callback</h3>
-					<div class="tsd-signature tsd-kind-icon">_callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>spriteSheet<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span>, textures<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1596">definitions/lunalite-pixi-mv.d.ts:1596</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>spriteSheet<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span>, textures<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>spriteSheet: <span class="tsd-signature-type">this</span></h5>
-											</li>
-											<li>
-												<h5>textures: <span class="tsd-signature-symbol">{}</span></h5>
-												<ul class="tsd-parameters">
-													<li class="tsd-parameter-index-signature">
-														<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h5>
-													</li>
-												</ul>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A map containing the textures for each animation.
+							Can be used to create an <a href="pixi.animatedsprite.html">AnimatedSprite</a>:</p>
+							<pre><code class="language-js"><span class="hljs-keyword">new</span> PIXI.AnimatedSprite(sheet.animations[<span class="hljs-string">&quot;anim_name&quot;</span>])</code></pre>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{Object} PIXI.Spritesheet#animations</p>
+							</dd>
+						</dl>
 					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="_framekeys" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _frame<wbr>Keys</h3>
-					<div class="tsd-signature tsd-kind-icon">_frame<wbr>Keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1594">definitions/lunalite-pixi-mv.d.ts:1594</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="_frames" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _frames</h3>
-					<div class="tsd-signature tsd-kind-icon">_frames<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1593">definitions/lunalite-pixi-mv.d.ts:1593</a></li>
-						</ul>
-					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="basetexture" class="tsd-anchor"></a>
@@ -224,9 +195,14 @@
 					<div class="tsd-signature tsd-kind-icon">base<wbr>Texture<span class="tsd-signature-symbol">:</span> <a href="pixi.basetexture.html" class="tsd-signature-type">BaseTexture</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1589">definitions/lunalite-pixi-mv.d.ts:1589</a></li>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:21135</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Reference to ths source texture.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="data" class="tsd-anchor"></a>
@@ -234,9 +210,14 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1591">definitions/lunalite-pixi-mv.d.ts:1591</a></li>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:21158</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Reference to the original JSON data.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="resolution" class="tsd-anchor"></a>
@@ -244,26 +225,35 @@
 					<div class="tsd-signature tsd-kind-icon">resolution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1592">definitions/lunalite-pixi-mv.d.ts:1592</a></li>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:21163</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The resolution of the spritesheet.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="textures" class="tsd-anchor"></a>
 					<h3>textures</h3>
-					<div class="tsd-signature tsd-kind-icon">textures<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<div class="tsd-signature tsd-kind-icon">textures<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1590">definitions/lunalite-pixi-mv.d.ts:1590</a></li>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:21144</li>
 						</ul>
 					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h5>
-							</li>
-						</ul>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A map containing all textures of the sprite sheet.
+							Can be used to create a <a href="pixi.sprite.html">Sprite</a>:</p>
+							<pre><code class="language-js"><span class="hljs-keyword">new</span> PIXI.Sprite(sheet.textures[<span class="hljs-string">&quot;image.png&quot;</span>]);</code></pre>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{Object} PIXI.Spritesheet#textures</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
@@ -272,93 +262,23 @@
 					<div class="tsd-signature tsd-kind-icon">BATCH_<wbr>SIZE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1585">definitions/lunalite-pixi-mv.d.ts:1585</a></li>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:21130</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The maximum number of Textures to build per process.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>1000</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="_nextbatch" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _next<wbr>Batch</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">_next<wbr>Batch<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1601">definitions/lunalite-pixi-mv.d.ts:1601</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="_parsecomplete" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _parse<wbr>Complete</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">_parse<wbr>Complete<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1600">definitions/lunalite-pixi-mv.d.ts:1600</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="_processframes" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _process<wbr>Frames</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">_process<wbr>Frames<span class="tsd-signature-symbol">(</span>initialFrameIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1599">definitions/lunalite-pixi-mv.d.ts:1599</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>initialFrameIndex: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="_updateresolution" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _update<wbr>Resolution</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">_update<wbr>Resolution<span class="tsd-signature-symbol">(</span>resolutionFilename<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1597">definitions/lunalite-pixi-mv.d.ts:1597</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>resolutionFilename: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="destroy" class="tsd-anchor"></a>
 					<h3>destroy</h3>
@@ -369,9 +289,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1602">definitions/lunalite-pixi-mv.d.ts:1602</a></li>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:21177</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Destroy Spritesheet and don&#39;t use after this.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -386,41 +311,43 @@
 					<a name="parse" class="tsd-anchor"></a>
 					<h3>parse</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>spriteSheet<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span>, textures<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L1598">definitions/lunalite-pixi-mv.d.ts:1598</a></li>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:21171</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Parser spritesheet from loaded data. This is done asynchronously
+									to prevent creating too many Texture within a single process.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>callback: <span class="tsd-signature-symbol">(</span>spriteSheet<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span>, textures<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<h5>callback: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Callback when complete returns
+										a map of the Textures for this spritesheet.</p>
+									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>spriteSheet<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span>, textures<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>spriteSheet: <span class="tsd-signature-type">this</span></h5>
-														</li>
-														<li>
-															<h5>textures: <span class="tsd-signature-symbol">{}</span></h5>
-															<ul class="tsd-parameters">
-																<li class="tsd-parameter-index-signature">
-																	<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="pixi.texture.html" class="tsd-signature-type">Texture</a></h5>
-																</li>
-															</ul>
+															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>params: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
 														</li>
 													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 												</li>
 											</ul>
 										</li>
@@ -439,61 +366,64 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class="label tsd-is-external">
+						<span>Internals</span>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_pixi_js_.html">&quot;pixi.js&quot;</a>
+					</li>
 					<li class="current tsd-kind-namespace">
 						<a href="../modules/pixi.html">PIXI</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.const.html">CONST</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.canvastinter.html">Canvas<wbr>Tinter</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.groupd8.html">Group<wbr>D8</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.accessibility.html">accessibility</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.core.html">core</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.extract.html">extract</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.extras.html">extras</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.filters.html">filters</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.glcore.html">gl<wbr>Core</a>
+								<a href="../modules/pixi.graphicsutils.html">graphics<wbr>Utils</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.groupd8.html">group<wbr>D8</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.interaction.html">interaction</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.loaders.html">loaders</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.mesh.html">mesh</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.particles.html">particles</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.prepare.html">prepare</a>
+								<a href="../modules/pixi.resources.html">resources</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.settings.html">settings</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.ticker.html">ticker</a>
+								<a href="../modules/pixi.systems.html">systems</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.utils.html">utils</a>
 							</li>
 						</ul>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/haxe.html">haxe</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/pixi.html">pixi</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/rm.html">rm</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/css.html">CSS</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/intl.html">Intl</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/webassembly.html">Web<wbr>Assembly</a>
 					</li>
 				</ul>
 			</nav>
@@ -507,17 +437,8 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="pixi.spritesheet.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="pixi.spritesheet.html#_batchindex" class="tsd-kind-icon">_batch<wbr>Index</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="pixi.spritesheet.html#_callback" class="tsd-kind-icon">_callback</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="pixi.spritesheet.html#_framekeys" class="tsd-kind-icon">_frame<wbr>Keys</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="pixi.spritesheet.html#_frames" class="tsd-kind-icon">_frames</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="pixi.spritesheet.html#animations" class="tsd-kind-icon">animations</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="pixi.spritesheet.html#basetexture" class="tsd-kind-icon">base<wbr>Texture</a>
@@ -533,18 +454,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="pixi.spritesheet.html#batch_size" class="tsd-kind-icon">BATCH_<wbr>SIZE</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="pixi.spritesheet.html#_nextbatch" class="tsd-kind-icon">_next<wbr>Batch</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="pixi.spritesheet.html#_parsecomplete" class="tsd-kind-icon">_parse<wbr>Complete</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="pixi.spritesheet.html#_processframes" class="tsd-kind-icon">_process<wbr>Frames</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="pixi.spritesheet.html#_updateresolution" class="tsd-kind-icon">_update<wbr>Resolution</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="pixi.spritesheet.html#destroy" class="tsd-kind-icon">destroy</a>
@@ -573,10 +482,6 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>

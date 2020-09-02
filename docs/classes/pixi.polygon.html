@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Polygon | LunaLite-MV</title>
-	<meta name="description" content="Documentation for LunaLite-MV">
+	<title>Polygon | Lunalite-MZ</title>
+	<meta name="description" content="Documentation for Lunalite-MZ">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">LunaLite-MV</a>
+					<a href="../index.html" class="title">Lunalite-MZ</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -69,11 +69,28 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A class to define a shape via user defined co-orinates.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>memberof</dt>
+						<dd><p>PIXI</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="target">Polygon</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="pixi.star.html" class="tsd-signature-type">Star</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -90,7 +107,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.polygon.html#closed" class="tsd-kind-icon">closed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.polygon.html#closestroke" class="tsd-kind-icon">close<wbr>Stroke</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.polygon.html#points" class="tsd-kind-icon">points</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pixi.polygon.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
@@ -99,7 +116,6 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.polygon.html#clone" class="tsd-kind-icon">clone</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.polygon.html#close" class="tsd-kind-icon">close</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pixi.polygon.html#contains" class="tsd-kind-icon">contains</a></li>
 							</ul>
 						</section>
@@ -112,49 +128,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Polygon<span class="tsd-signature-symbol">(</span>points<span class="tsd-signature-symbol">: </span><a href="pixi.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.polygon.html" class="tsd-signature-type">Polygon</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Polygon<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>points<span class="tsd-signature-symbol">: </span><a href="pixi.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.polygon.html" class="tsd-signature-type">Polygon</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Polygon<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>points<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.polygon.html" class="tsd-signature-type">Polygon</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Polygon<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>points<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="pixi.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pixi.polygon.html" class="tsd-signature-type">Polygon</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L656">definitions/lunalite-pixi-mv.d.ts:656</a></li>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:12737</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>points: <a href="pixi.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="pixi.polygon.html" class="tsd-signature-type">Polygon</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L657">definitions/lunalite-pixi-mv.d.ts:657</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>points: <a href="pixi.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="pixi.polygon.html" class="tsd-signature-type">Polygon</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L660">definitions/lunalite-pixi-mv.d.ts:660</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>points: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>points: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="pixi.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="pixi.polygon.html" class="tsd-signature-type">Polygon</a></h4>
@@ -165,14 +151,27 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="closed" class="tsd-anchor"></a>
-					<h3>closed</h3>
-					<div class="tsd-signature tsd-kind-icon">closed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="closestroke" class="tsd-anchor"></a>
+					<h3>close<wbr>Stroke</h3>
+					<div class="tsd-signature tsd-kind-icon">close<wbr>Stroke<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L664">definitions/lunalite-pixi-mv.d.ts:664</a></li>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:12759</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p><code>false</code> after moveTo, <code>true</code> after <code>closePath</code>. In all other cases it is <code>true</code>.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{boolean} PIXI.Polygon#closeStroke</p>
+							</dd>
+							<dt>default</dt>
+							<dd><p>true</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="points" class="tsd-anchor"></a>
@@ -180,19 +179,47 @@
 					<div class="tsd-signature tsd-kind-icon">points<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L665">definitions/lunalite-pixi-mv.d.ts:665</a></li>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:12744</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An array of the points of this polygon</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{number[]} PIXI.Polygon#points</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> type</h3>
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L666">definitions/lunalite-pixi-mv.d.ts:666</a></li>
+							<li>Defined in definitions/lunalite-pixi-mz.d.ts:12753</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The type of the object, mainly used to avoid <code>instanceof</code> checks</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>member</dt>
+							<dd><p>{number} PIXI.Polygon#type</p>
+							</dd>
+							<dt>readonly</dt>
+							<dd></dd>
+							<dt>default</dt>
+							<dd><p>PIXI.SHAPES.POLY</p>
+							</dd>
+							<dt>see</dt>
+							<dd><p>PIXI.SHAPES</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -207,27 +234,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L668">definitions/lunalite-pixi-mv.d.ts:668</a></li>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:12765</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a clone of this polygon</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="pixi.polygon.html" class="tsd-signature-type">Polygon</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="close" class="tsd-anchor"></a>
-					<h3>close</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L670">definitions/lunalite-pixi-mv.d.ts:670</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>a copy of the polygon</p>
 						</li>
 					</ul>
 				</section>
@@ -241,19 +257,31 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/LunaTechsDev/LunaLite-MV/blob/06bbbe5/definitions/lunalite-pixi-mv.d.ts#L669">definitions/lunalite-pixi-mv.d.ts:669</a></li>
+									<li>Defined in definitions/lunalite-pixi-mz.d.ts:12773</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks whether the x and y coordinates passed to this function are contained within this polygon</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>x: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The X coordinate of the point to test</p>
+									</div>
 								</li>
 								<li>
 									<h5>y: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Y coordinate of the point to test</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Whether the x/y coordinates are within this polygon</p>
 						</li>
 					</ul>
 				</section>
@@ -265,61 +293,64 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class="label tsd-is-external">
+						<span>Internals</span>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_pixi_js_.html">&quot;pixi.js&quot;</a>
+					</li>
 					<li class="current tsd-kind-namespace">
 						<a href="../modules/pixi.html">PIXI</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.const.html">CONST</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.canvastinter.html">Canvas<wbr>Tinter</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.groupd8.html">Group<wbr>D8</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.accessibility.html">accessibility</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.core.html">core</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.extract.html">extract</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.extras.html">extras</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.filters.html">filters</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.glcore.html">gl<wbr>Core</a>
+								<a href="../modules/pixi.graphicsutils.html">graphics<wbr>Utils</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/pixi.groupd8.html">group<wbr>D8</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.interaction.html">interaction</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.loaders.html">loaders</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.mesh.html">mesh</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.particles.html">particles</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.prepare.html">prepare</a>
+								<a href="../modules/pixi.resources.html">resources</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.settings.html">settings</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-								<a href="../modules/pixi.ticker.html">ticker</a>
+								<a href="../modules/pixi.systems.html">systems</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 								<a href="../modules/pixi.utils.html">utils</a>
 							</li>
 						</ul>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/haxe.html">haxe</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/pixi.html">pixi</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/rm.html">rm</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/css.html">CSS</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/intl.html">Intl</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-external">
+						<a href="../modules/webassembly.html">Web<wbr>Assembly</a>
 					</li>
 				</ul>
 			</nav>
@@ -334,7 +365,7 @@
 								<a href="pixi.polygon.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="pixi.polygon.html#closed" class="tsd-kind-icon">closed</a>
+								<a href="pixi.polygon.html#closestroke" class="tsd-kind-icon">close<wbr>Stroke</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="pixi.polygon.html#points" class="tsd-kind-icon">points</a>
@@ -344,9 +375,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="pixi.polygon.html#clone" class="tsd-kind-icon">clone</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="pixi.polygon.html#close" class="tsd-kind-icon">close</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="pixi.polygon.html#contains" class="tsd-kind-icon">contains</a>
